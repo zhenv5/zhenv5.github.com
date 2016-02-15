@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://zhenv5.github.io/2016/02/15/Power-Your-Github-Pages-with-Hexo/</loc>
-    
-    <lastmod>2016-02-15T18:51:55.299Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://zhenv5.github.io/2016/02/15/Hello-Hexo/</loc>
     
-    <lastmod>2016-02-15T18:37:30.541Z</lastmod>
+    <lastmod>2016-02-15T18:59:38.450Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://zhenv5.github.io/tags/index.html</loc>
     
-    <lastmod>2016-02-15T16:02:54.729Z</lastmod>
+    <lastmod>2016-02-15T18:59:16.226Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://zhenv5.github.io/categories/index.html</loc>
     
-    <lastmod>2016-02-15T16:02:44.553Z</lastmod>
+    <lastmod>2016-02-15T18:59:04.690Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Power-Your-Github-Pages-with-Hexo/</loc>
+    
+    <lastmod>2016-02-15T18:51:55.299Z</lastmod>
     
   </url>
   
