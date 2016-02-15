@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Python/Delete-Punctuation-in-Sentences/</loc>
+    
+    <lastmod>2016-02-15T22:14:20.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Python/Heap-and-Heap%20-Queue-Algorithm/</loc>
+    
+    <lastmod>2016-02-15T22:14:04.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Python/Binary-Search-Tree/</loc>
+    
+    <lastmod>2016-02-15T22:13:41.392Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Python/Text-Progress-Bar-Library-for-Python/</loc>
+    
+    <lastmod>2016-02-15T22:13:09.264Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhenv5.github.io/2016/02/15/Power-Your-Github-Pages-with-Hexo/</loc>
     
     <lastmod>2016-02-15T21:34:04.237Z</lastmod>
@@ -33,6 +61,13 @@
     <loc>http://zhenv5.github.io/2016/02/15/Hello-Hexo/</loc>
     
     <lastmod>2016-02-15T19:23:44.450Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/02/15/Python/Usage-of-Subprocess-Module-in-Python/</loc>
+    
+    <lastmod>2016-02-15T05:11:44.000Z</lastmod>
     
   </url>
   
