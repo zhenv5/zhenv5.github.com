@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-17T22:50:50.769Z</updated>
+  <updated>2016-02-17T23:01:44.961Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -19,13 +19,13 @@
     <title>Build VTK on Ubuntu</title>
     <link href="http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/"/>
     <id>http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/</id>
-    <published>2016-02-17T22:50:50.769Z</published>
-    <updated>2016-02-17T22:50:50.769Z</updated>
+    <published>2016-02-17T23:01:44.961Z</published>
+    <updated>2016-02-17T23:01:44.961Z</updated>
     
     <content type="html">&lt;p&gt;VTK is an open source framework for 3D computer graphics. I tried to build it on my Ubuntu systems, but failed for several times. I followed&lt;br&gt;and modified &lt;a href=&quot;http://www.vtk.org/Wiki/VTK/Building/Linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this scripts&lt;/a&gt; to build it successfully.&lt;/p&gt;
 &lt;h3 id=&quot;Download&quot;&gt;&lt;a href=&quot;#Download&quot; class=&quot;headerlink&quot; title=&quot;Download&quot;&gt;&lt;/a&gt;Download&lt;/h3&gt;&lt;p&gt;Clone with git:&lt;/p&gt;
 &lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;keyword&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;git&lt;/span&gt;://vtk.org/VTK.git VTK&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;Configure&quot;&gt;&lt;a href=&quot;#Configure&quot; class=&quot;headerlink&quot; title=&quot;Configure&quot;&gt;&lt;/a&gt;Configure&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;kdir VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cmake -DCMAKE_BUILD_TYPE:STRING=Release /path/to/VTK&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Configure&quot;&gt;&lt;a href=&quot;#Configure&quot; class=&quot;headerlink&quot; title=&quot;Configure&quot;&gt;&lt;/a&gt;Configure&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cmake -DCMAKE_BUILD_TYPE:STRING=Release /path/to/VTK&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;Qt-Setup&quot;&gt;&lt;a href=&quot;#Qt-Setup&quot; class=&quot;headerlink&quot; title=&quot;Qt Setup&quot;&gt;&lt;/a&gt;Qt Setup&lt;/h3&gt;&lt;p&gt;VTK requires QT. I used Qt5.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Download qt offline installer for linux:&lt;/li&gt;
@@ -43,10 +43,14 @@
 &lt;p&gt;It’s a &lt;a href=&quot;http://stackoverflow.com/questions/18615451/cmake-missing-modules-directory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CMake missing modules directory discussed in Stackoverflow&lt;/a&gt;. Following below scripts to solve:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;vi ~/.bashrc&lt;/li&gt;
-&lt;li&gt;edit .bahsrc by adding: &lt;figure class=&quot;highlight&quot;&gt;&lt;figcaption&gt;&lt;span&gt;PATH=$PATH:/usr/bin:/bin```&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;* source ~/.bashrc&amp;#10;&amp;#10;Another error is related to QT5, It shows that [CMake cannot find my QT5 library](http://stackoverflow.com/questions/18722329/cmake-does-not-find-qt-5-1-1).&amp;#10;&amp;#10;Fixed it with following in ```/path/to/VTK/GUISupport/QT/CMakeLists.txt```:&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;edit .bahsrc by adding: export PATH=$PATH:/usr/bin:/bin&lt;/li&gt;
+&lt;li&gt;source ~/.bashrc&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;set(CMAKE_PREFIX_PATH $ENV{HOME}/QT/5.5/gcc_64)&lt;br&gt;&lt;figure class=&quot;highlight livecodeserver&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;### Build&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Once cmake finishs successfully configuring, use make inside &lt;span class=&quot;operator&quot;&gt;the&lt;/span&gt; build &lt;span class=&quot;built_in&quot;&gt;directory&lt;/span&gt;.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;make&lt;br&gt;```&lt;/p&gt;
+&lt;p&gt;Another error is related to QT5, It shows that &lt;a href=&quot;http://stackoverflow.com/questions/18722329/cmake-does-not-find-qt-5-1-1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CMake cannot find my QT5 library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fixed it with following in /path/to/VTK/GUISupport/QT/CMakeLists.txt:&lt;/p&gt;
+&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;set(CMAKE_PREFIX_PATH &lt;span class=&quot;variable&quot;&gt;$ENV&lt;/span&gt;&amp;#123;HOME&amp;#125;/QT/&lt;span class=&quot;number&quot;&gt;5.5&lt;/span&gt;/gcc_64)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Build&quot;&gt;&lt;a href=&quot;#Build&quot; class=&quot;headerlink&quot; title=&quot;Build&quot;&gt;&lt;/a&gt;Build&lt;/h3&gt;&lt;p&gt;Once CMake finishes successfully configuring, use make inside the build directory.&lt;/p&gt;
+&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;make&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
     
     <summary type="html">
