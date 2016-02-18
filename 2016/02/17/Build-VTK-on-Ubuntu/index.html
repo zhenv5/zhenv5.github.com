@@ -25,8 +25,28 @@
 <p>Another error is related to QT5, It shows that <a href="http://stackoverflow.com/questions/18722329/cmake-does-not-find-qt-5-1-1" target="_blank" rel="external">CMake cannot find my QT5 library</a>.</p>
 <p>Fixed it with following in /path/to/VTK/GUISupport/QT/CMakeLists.txt:</p>
 <figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set(CMAKE_PREFIX_PATH <span class="variable">$ENV</span>&#123;HOME&#125;/QT/<span class="number">5.5</span>/gcc_64)</span><br></pre></td></tr></table></figure>
+<p>Methods to install Qt4, can be viewed <a href="http://www.vtk.org/Wiki/VTK/Building/Linux" target="_blank" rel="external">here</a>, remember to use “make install” after “make”.</p>
+<ul>
+<li>mkdir qt-4.8.6-build &amp;&amp; cd qt-4.8.6-build</li>
+<li>wget <a href="http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz" target="_blank" rel="external">http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz</a></li>
+<li>tar xzf qt-everywhere-opensource-src-4.8.6.tar.gz</li>
+<li>cd qt-everywhere-opensource-src-4.8.6</li>
+<li>make</li>
+</ul>
+<p>Then in the VTK build directory, configure VTK with the path to the Qt build</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cmake -<span class="constant">DQT_QMAKE_EXECUTABLE</span><span class="symbol">:PATH=~/Documents/Software/qt-</span><span class="number">4.8</span>.<span class="number">6</span>-build/qt-everywhere-opensource-src-<span class="number">4.8</span>.<span class="number">6</span>/bin/qmake -<span class="constant">DVTK_Group_Qt</span><span class="symbol">:BOOL=ON</span>  -<span class="constant">DBUILD_SHARED_LIBRARIES</span><span class="symbol">:BOOL=ON</span> -<span class="constant">DQT_QMAKE_EXECUTABLE</span><span class="symbol">:PATH=~/Documents/Software/qt-</span><span class="number">4.8</span>.<span class="number">6</span>-build/qt-everywhere-opensource-src-<span class="number">4.8</span>.<span class="number">6</span>/bin/ ../<span class="constant">VTK</span>/</span><br></pre></td></tr></table></figure>
+<p>Some errors such as:</p>
+<p>&gt;<br>Could NOT find Qt4 (missing: QT_QMAKE_EXECUTABLE QT_MOC_EXECUTABLE<br>QT_RCC_EXECUTABLE QT_UIC_EXECUTABLE QT_INCLUDE_DIR QT_LIBRARY_DIR<br>QT_QTCORE_LIBRARY)</p>
+<p>Possible solutions:</p>
+<ol>
+<li>Add the path to the directory containing the qmake executable to your PATH environment variable (i.e. export PATH=/path/to/qmake/dir/:PATH under linux). Remember use source after configuration.</li>
+<li>Set the cmake variable QT_QMAKE_EXECUTABLE to the full path of the qmake executable (i.e. cmake /path/to/CMakeLists.txt -DQT_QMAKE_EXECUTABLE=/path/to/qmake/executable/dir/)</li>
+<li>Set the QT_QMAKE_EXECUTABLE in your CMakeCache.txt or using ccmake/cmakegui</li>
+</ol>
 <h3 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h3><p>Once CMake finishes successfully configuring, use make inside the build directory.</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">make</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">make</span></span><br></pre></td></tr></table></figure>
+<p>Install it to a system-wide location:</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
 </div><a data-url="http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/" data-id="cikrfnnv50000w0legysc9pan" class="article-share-link">Share</a><div class="tags"><a href="/tags/CMake/">CMake</a><a href="/tags/QT/">QT</a><a href="/tags/Ubuntu/">Ubuntu</a><a href="/tags/VTK/">VTK</a></div><div class="post-nav"><a href="/2016/02/15/Python/Heap-and-Heap -Queue-Algorithm/" class="next">Introduction to Heap<i class="icon-next"></i></a></div><div id="disqus_thread"><script>var disqus_shortname = 'zhenv5';
 var disqus_identifier = '2016/02/17/Build-VTK-on-Ubuntu/';
 var disqus_title = 'Build VTK on Ubuntu';

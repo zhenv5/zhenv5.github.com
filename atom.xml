@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-17T23:01:44.961Z</updated>
+  <updated>2016-02-18T03:46:26.007Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Build VTK on Ubuntu</title>
     <link href="http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/"/>
     <id>http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/</id>
-    <published>2016-02-17T23:01:44.961Z</published>
-    <updated>2016-02-17T23:01:44.961Z</updated>
+    <published>2016-02-18T03:46:26.007Z</published>
+    <updated>2016-02-18T03:46:26.007Z</updated>
     
     <content type="html">&lt;p&gt;VTK is an open source framework for 3D computer graphics. I tried to build it on my Ubuntu systems, but failed for several times. I followed&lt;br&gt;and modified &lt;a href=&quot;http://www.vtk.org/Wiki/VTK/Building/Linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this scripts&lt;/a&gt; to build it successfully.&lt;/p&gt;
 &lt;h3 id=&quot;Download&quot;&gt;&lt;a href=&quot;#Download&quot; class=&quot;headerlink&quot; title=&quot;Download&quot;&gt;&lt;/a&gt;Download&lt;/h3&gt;&lt;p&gt;Clone with git:&lt;/p&gt;
@@ -49,8 +49,28 @@
 &lt;p&gt;Another error is related to QT5, It shows that &lt;a href=&quot;http://stackoverflow.com/questions/18722329/cmake-does-not-find-qt-5-1-1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CMake cannot find my QT5 library&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Fixed it with following in /path/to/VTK/GUISupport/QT/CMakeLists.txt:&lt;/p&gt;
 &lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;set(CMAKE_PREFIX_PATH &lt;span class=&quot;variable&quot;&gt;$ENV&lt;/span&gt;&amp;#123;HOME&amp;#125;/QT/&lt;span class=&quot;number&quot;&gt;5.5&lt;/span&gt;/gcc_64)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Methods to install Qt4, can be viewed &lt;a href=&quot;http://www.vtk.org/Wiki/VTK/Building/Linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;, remember to use “make install” after “make”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mkdir qt-4.8.6-build &amp;amp;&amp;amp; cd qt-4.8.6-build&lt;/li&gt;
+&lt;li&gt;wget &lt;a href=&quot;http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://download.qt-project.org/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tar.gz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tar xzf qt-everywhere-opensource-src-4.8.6.tar.gz&lt;/li&gt;
+&lt;li&gt;cd qt-everywhere-opensource-src-4.8.6&lt;/li&gt;
+&lt;li&gt;make&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then in the VTK build directory, configure VTK with the path to the Qt build&lt;/p&gt;
+&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo cmake -&lt;span class=&quot;constant&quot;&gt;DQT_QMAKE_EXECUTABLE&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:PATH=~/Documents/Software/qt-&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;4.8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;-build/qt-everywhere-opensource-src-&lt;span class=&quot;number&quot;&gt;4.8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;/bin/qmake -&lt;span class=&quot;constant&quot;&gt;DVTK_Group_Qt&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:BOOL=ON&lt;/span&gt;  -&lt;span class=&quot;constant&quot;&gt;DBUILD_SHARED_LIBRARIES&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:BOOL=ON&lt;/span&gt; -&lt;span class=&quot;constant&quot;&gt;DQT_QMAKE_EXECUTABLE&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:PATH=~/Documents/Software/qt-&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;4.8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;-build/qt-everywhere-opensource-src-&lt;span class=&quot;number&quot;&gt;4.8&lt;/span&gt;.&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;/bin/ ../&lt;span class=&quot;constant&quot;&gt;VTK&lt;/span&gt;/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Some errors such as:&lt;/p&gt;
+&lt;p&gt;&amp;gt;&lt;br&gt;Could NOT find Qt4 (missing: QT_QMAKE_EXECUTABLE QT_MOC_EXECUTABLE&lt;br&gt;QT_RCC_EXECUTABLE QT_UIC_EXECUTABLE QT_INCLUDE_DIR QT_LIBRARY_DIR&lt;br&gt;QT_QTCORE_LIBRARY)&lt;/p&gt;
+&lt;p&gt;Possible solutions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add the path to the directory containing the qmake executable to your PATH environment variable (i.e. export PATH=/path/to/qmake/dir/:PATH under linux). Remember use source after configuration.&lt;/li&gt;
+&lt;li&gt;Set the cmake variable QT_QMAKE_EXECUTABLE to the full path of the qmake executable (i.e. cmake /path/to/CMakeLists.txt -DQT_QMAKE_EXECUTABLE=/path/to/qmake/executable/dir/)&lt;/li&gt;
+&lt;li&gt;Set the QT_QMAKE_EXECUTABLE in your CMakeCache.txt or using ccmake/cmakegui&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3 id=&quot;Build&quot;&gt;&lt;a href=&quot;#Build&quot; class=&quot;headerlink&quot; title=&quot;Build&quot;&gt;&lt;/a&gt;Build&lt;/h3&gt;&lt;p&gt;Once CMake finishes successfully configuring, use make inside the build directory.&lt;/p&gt;
-&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;make&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo &lt;span class=&quot;built_in&quot;&gt;make&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Install it to a system-wide location:&lt;/p&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo make &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
     
     <summary type="html">
