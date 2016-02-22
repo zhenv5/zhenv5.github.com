@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-22T04:49:39.698Z</updated>
+  <updated>2016-02-22T04:51:24.959Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>subprocess, a Python module can replace shell</title>
+    <link href="http://zhenv5.github.io/2016/02/21/Python/Python-Module-subprocess/"/>
+    <id>http://zhenv5.github.io/2016/02/21/Python/Python-Module-subprocess/</id>
+    <published>2016-02-22T04:51:24.959Z</published>
+    <updated>2016-02-22T04:51:24.959Z</updated>
+    
+    <content type="html">&lt;p&gt;The &lt;strong&gt;subprocess&lt;/strong&gt; module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. This module intends to replace several older modules and functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;os.system&lt;/li&gt;
+&lt;li&gt;os.spawn&lt;/li&gt;
+&lt;li&gt;os.popen&lt;/li&gt;
+&lt;li&gt;popen.2&lt;/li&gt;
+&lt;li&gt;commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://hackerxu.com/2014/10/09/subprocess.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python subprocess模块总结
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/imzoer/article/details/8678029&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python中subprocess学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.chinaunix.net/uid-26000296-id-4461522.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; python子进程模块subprocess详解与应用实例 之一&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.chinaunix.net/uid-26000296-id-4461541.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; python子进程模块subprocess详解与应用实例 之二 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.chinaunix.net/uid-26000296-id-4461555.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; python子进程模块subprocess详解与应用实例 之三 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The &lt;strong&gt;subprocess&lt;/strong&gt; module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their ret
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="Module" scheme="http://zhenv5.github.io/tags/Module/"/>
+    
+      <category term="subprocess" scheme="http://zhenv5.github.io/tags/subprocess/"/>
+    
+  </entry>
   
   <entry>
     <title>Cool Python Modules</title>
