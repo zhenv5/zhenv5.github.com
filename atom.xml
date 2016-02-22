@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-18T03:46:26.007Z</updated>
+  <updated>2016-02-22T04:49:39.698Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -16,17 +16,66 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cool Python Modules</title>
+    <link href="http://zhenv5.github.io/2016/02/21/Python/Cool-Python-Modules/"/>
+    <id>http://zhenv5.github.io/2016/02/21/Python/Cool-Python-Modules/</id>
+    <published>2016-02-22T04:49:39.698Z</published>
+    <updated>2016-02-22T04:49:39.698Z</updated>
+    
+    <content type="html">&lt;p&gt;Life is short, I use Python.&lt;/p&gt;
+&lt;h3 id=&quot;Python-Modules&quot;&gt;&lt;a href=&quot;#Python-Modules&quot; class=&quot;headerlink&quot; title=&quot;Python Modules&quot;&gt;&lt;/a&gt;Python Modules&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.python.org/2/library/urllib2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;urllib2&lt;/a&gt;: extensible library for opening URLs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tweepy.readthedocs.org/en/v3.5.0/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tweepy&lt;/a&gt;: a easy way to use twitter API&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.python.org/2/library/subprocess.html#popen-constructor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;subprocess&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.python.org/2/library/shlex.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;shlex&lt;/a&gt;: The shlex class makes it easy to write lexical analyzers for simple syntaxes resembling that of the Unix shell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://doc.scrapy.org/en/latest/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Scrapy&lt;/a&gt;: a framework for crawling web sites.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://networkx.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;networks&lt;/a&gt;: a framework to study social network.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Ref&quot;&gt;&lt;a href=&quot;#Ref&quot; class=&quot;headerlink&quot; title=&quot;Ref&quot;&gt;&lt;/a&gt;Ref&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/What-are-the-best-Python-scripts-youve-ever-written&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;What are the best Python scripts you’ve ever written?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.linuxeye.com/410.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python多线程抓取代理服务器&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/shuoit/20150313/345239.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python写爬虫抓站的一些技巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://python.jobbole.com/81398/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何使用 urllib 包获取网络资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://seanlin.logdown.com/posts/239883-python-idioms&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python 慣用語&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://python.jobbole.com/82633/?utm_source=group.jobbole.com&amp;amp;utm_medium=relatedArticles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python 工具列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://python.jobbole.com/83588/?utm_source=group.jobbole.com&amp;amp;utm_medium=relatedArticles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何用 Python 爬取需要登录的网站？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://python.jobbole.com/82000/?utm_source=group.jobbole.com&amp;amp;utm_medium=relatedArticles&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用python爬虫抓站的一些技巧总结：进阶篇&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ranlei.github.io/urllib3/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;URLLIB3的抓取问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Life is short, I use Python.&lt;/p&gt;
+&lt;h3 id=&quot;Python-Modules&quot;&gt;&lt;a href=&quot;#Python-Modules&quot; class=&quot;headerlink&quot; title=&quot;Python Modules&quot;&gt;&lt;/a&gt;Python M
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="Module" scheme="http://zhenv5.github.io/tags/Module/"/>
+    
+      <category term="subprocess" scheme="http://zhenv5.github.io/tags/subprocess/"/>
+    
+      <category term="tweepy" scheme="http://zhenv5.github.io/tags/tweepy/"/>
+    
+      <category term="urllib2" scheme="http://zhenv5.github.io/tags/urllib2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Build VTK on Ubuntu</title>
-    <link href="http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/"/>
-    <id>http://zhenv5.github.io/2016/02/17/Build-VTK-on-Ubuntu/</id>
-    <published>2016-02-18T03:46:26.007Z</published>
-    <updated>2016-02-18T03:46:26.007Z</updated>
+    <link href="http://zhenv5.github.io/2016/02/18/Build-VTK-on-Ubuntu/"/>
+    <id>http://zhenv5.github.io/2016/02/18/Build-VTK-on-Ubuntu/</id>
+    <published>2016-02-18T15:43:37.690Z</published>
+    <updated>2016-02-18T15:43:37.690Z</updated>
     
     <content type="html">&lt;p&gt;VTK is an open source framework for 3D computer graphics. I tried to build it on my Ubuntu systems, but failed for several times. I followed&lt;br&gt;and modified &lt;a href=&quot;http://www.vtk.org/Wiki/VTK/Building/Linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this scripts&lt;/a&gt; to build it successfully.&lt;/p&gt;
 &lt;h3 id=&quot;Download&quot;&gt;&lt;a href=&quot;#Download&quot; class=&quot;headerlink&quot; title=&quot;Download&quot;&gt;&lt;/a&gt;Download&lt;/h3&gt;&lt;p&gt;Clone with git:&lt;/p&gt;
 &lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;keyword&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;git&lt;/span&gt;://vtk.org/VTK.git VTK&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;Configure&quot;&gt;&lt;a href=&quot;#Configure&quot; class=&quot;headerlink&quot; title=&quot;Configure&quot;&gt;&lt;/a&gt;Configure&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; VTK-Release-build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cmake -DCMAKE_BUILD_TYPE:STRING=Release /path/to/VTK&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;Qt-Setup&quot;&gt;&lt;a href=&quot;#Qt-Setup&quot; class=&quot;headerlink&quot; title=&quot;Qt Setup&quot;&gt;&lt;/a&gt;Qt Setup&lt;/h3&gt;&lt;p&gt;VTK requires QT. I used Qt5.&lt;/p&gt;
+&lt;h3 id=&quot;Qt-Setup&quot;&gt;&lt;a href=&quot;#Qt-Setup&quot; class=&quot;headerlink&quot; title=&quot;Qt Setup&quot;&gt;&lt;/a&gt;Qt Setup&lt;/h3&gt;&lt;p&gt;VTK requires QT. I used Qt5 at first, but failed to install denali. I succeed with using QT4.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Download qt offline installer for linux:&lt;/li&gt;
 &lt;/ul&gt;
@@ -71,6 +120,8 @@
 &lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo &lt;span class=&quot;built_in&quot;&gt;make&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;Install it to a system-wide location:&lt;/p&gt;
 &lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo make &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Good Luck.&lt;/p&gt;
+&lt;hr&gt;
 </content>
     
     <summary type="html">
