@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-24T22:33:28.265Z</updated>
+  <updated>2016-02-23T03:02:30.549Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,98 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>俄亥俄华人论坛广告系统</title>
-    <link href="http://zhenv5.github.io/2016/02/24/Others/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%8D%8E%E4%BA%BA%E8%AE%BA%E5%9D%9B%E5%B9%BF%E5%91%8A/"/>
-    <id>http://zhenv5.github.io/2016/02/24/Others/俄亥俄华人论坛广告/</id>
-    <published>2016-02-24T22:34:48.501Z</published>
-    <updated>2016-02-24T22:33:28.265Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;广告形式&quot;&gt;&lt;a href=&quot;#广告形式&quot; class=&quot;headerlink&quot; title=&quot;广告形式&quot;&gt;&lt;/a&gt;广告形式&lt;/h3&gt;&lt;h4 id=&quot;帖子广告&quot;&gt;&lt;a href=&quot;#帖子广告&quot; class=&quot;headerlink&quot; title=&quot;帖子广告&quot;&gt;&lt;/a&gt;帖子广告&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;站长推荐 (运营-&amp;gt;站长推荐)&lt;/li&gt;
-&lt;li&gt;友情链接 (运营-&amp;gt;友情链接)&lt;/li&gt;
-&lt;li&gt;本版置顶&lt;/li&gt;
-&lt;li&gt;分类置顶&lt;/li&gt;
-&lt;li&gt;全局置顶&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;位置广告&quot;&gt;&lt;a href=&quot;#位置广告&quot; class=&quot;headerlink&quot; title=&quot;位置广告&quot;&gt;&lt;/a&gt;位置广告&lt;/h4&gt;&lt;p&gt;详见位置广告&lt;/p&gt;
-&lt;h3 id=&quot;广告展现方式&quot;&gt;&lt;a href=&quot;#广告展现方式&quot; class=&quot;headerlink&quot; title=&quot;广告展现方式&quot;&gt;&lt;/a&gt;广告展现方式&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;代码&lt;/li&gt;
-&lt;li&gt;文字&lt;/li&gt;
-&lt;li&gt;图片&lt;/li&gt;
-&lt;li&gt;Flash&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;位置广告-1&quot;&gt;&lt;a href=&quot;#位置广告-1&quot; class=&quot;headerlink&quot; title=&quot;位置广告&quot;&gt;&lt;/a&gt;位置广告&lt;/h3&gt;&lt;p&gt;实例广告信息:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;title: 俄亥俄华人圈&lt;/li&gt;
-&lt;li&gt;文字: 俄亥俄华人论坛圈,俄亥俄华人自己的服务圈&lt;/li&gt;
-&lt;li&gt;链接：　&lt;a href=&quot;http://www.ohiocssa.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ohiocssa.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;点击相应Demo链接查看具体位置广告信息.&lt;/p&gt;
-&lt;h4 id=&quot;帖子列表帖位广告&quot;&gt;&lt;a href=&quot;#帖子列表帖位广告&quot; class=&quot;headerlink&quot; title=&quot;帖子列表帖位广告&quot;&gt;&lt;/a&gt;帖子列表帖位广告&lt;/h4&gt;&lt;p&gt;展现方式:&lt;/p&gt;
-&lt;p&gt;帖位广告显示于帖子列表页第一页的帖子位置，可以模拟出一个具有广告意义的帖子地址，吸引访问者的注意力。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=forumdisplay&amp;amp;fid=2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;全局-页头通栏广告&quot;&gt;&lt;a href=&quot;#全局-页头通栏广告&quot; class=&quot;headerlink&quot; title=&quot;全局 页头通栏广告&quot;&gt;&lt;/a&gt;全局 页头通栏广告&lt;/h4&gt;&lt;p&gt;展现方式: 页头通栏广告显示于页面上方，通常使用 960x60 图片或 Flash 的形式。当前页面有多个页头通栏广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 由于能够在页面打开的第一时间将广告内容展现于最醒目的位置，因此成为了网页中价位最高、最适合进行商业宣传或品牌推广的广告类型之一。&lt;/p&gt;
-&lt;h4 id=&quot;全局-页头二级导航栏广告&quot;&gt;&lt;a href=&quot;#全局-页头二级导航栏广告&quot; class=&quot;headerlink&quot; title=&quot;全局 页头二级导航栏广告&quot;&gt;&lt;/a&gt;全局 页头二级导航栏广告&lt;/h4&gt;&lt;p&gt;展现方式: 页头二级导航栏广告显示于页面上方，通常使用 960x60 图片或 Flash 的形式。当前页面有多个通栏广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 由于能够在页面打开的第一时间将广告内容展现于最醒目的位置，因此成为了网页中价位最高、最适合进行商业宣传或品牌推广的广告类型之一。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=forumdisplay&amp;amp;fid=2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;论坛-分类间广告&quot;&gt;&lt;a href=&quot;#论坛-分类间广告&quot; class=&quot;headerlink&quot; title=&quot;论坛 分类间广告&quot;&gt;&lt;/a&gt;论坛 分类间广告&lt;/h4&gt;&lt;p&gt;展现方式: 论坛分类间广告显示于版块列表相邻的两个版块分类之间，可使用 960x60 或其他尺寸图片和 Flash 的形式。当前页面有多个分类间广告时，系统会从中抽取与版块分类数相等的条目进行随机显示。&lt;/p&gt;
-&lt;p&gt;价值分析:由于出现在版块列表页比较明显的位置，广告展示效果较好，但是过多过大的广告可能会招致访问者反感。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://ohiocssa.com/forum.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;全局-页尾通栏广告&quot;&gt;&lt;a href=&quot;#全局-页尾通栏广告&quot; class=&quot;headerlink&quot; title=&quot;全局 页尾通栏广告&quot;&gt;&lt;/a&gt;全局 页尾通栏广告&lt;/h4&gt;&lt;p&gt;展现方式: 页尾通栏广告显示于页面下方，通常使用 960x60 或其他尺寸图片、Flash 的形式。当前页面有多个页尾通栏广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 与页面头部和中部相比，页面尾部的展现机率相对较低，通常不会引起访问者的反感，同时又基本能够覆盖所有对广告内容感兴趣的受众，因此适合中性而温和的推广。&lt;/p&gt;
-&lt;h4 id=&quot;全局-右下角广告&quot;&gt;&lt;a href=&quot;#全局-右下角广告&quot; class=&quot;headerlink&quot; title=&quot;全局 右下角广告&quot;&gt;&lt;/a&gt;全局 右下角广告&lt;/h4&gt;&lt;p&gt;展现方式: 显示于页面右下角。当前页面有多个页头通栏广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 由于能够在页面的明显位置展现，因此成为了网页中价位最高、最适合进行商业宣传或品牌推广的广告类型之一。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=viewthread&amp;amp;tid=23&amp;amp;extra=page%3D1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;门户-文章广告&quot;&gt;&lt;a href=&quot;#门户-文章广告&quot; class=&quot;headerlink&quot; title=&quot;门户 文章广告&quot;&gt;&lt;/a&gt;门户 文章广告&lt;/h4&gt;&lt;p&gt;展现方式: 文章广告显示于文章页面，分为内容区域环绕广告和相关阅读上方广告 2 种。&lt;/p&gt;
-&lt;h4 id=&quot;搜索-右侧广告&quot;&gt;&lt;a href=&quot;#搜索-右侧广告&quot; class=&quot;headerlink&quot; title=&quot;搜索 右侧广告&quot;&gt;&lt;/a&gt;搜索 右侧广告&lt;/h4&gt;&lt;p&gt;展现方式: 搜索右侧广告展现于搜索结果页右侧。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/search.php?mod=forum&amp;amp;searchid=3&amp;amp;orderby=lastpost&amp;amp;ascdesc=desc&amp;amp;searchsubmit=yes&amp;amp;kw=osu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;全局-对联广告&quot;&gt;&lt;a href=&quot;#全局-对联广告&quot; class=&quot;headerlink&quot; title=&quot;全局 对联广告&quot;&gt;&lt;/a&gt;全局 对联广告&lt;/h4&gt;&lt;p&gt;展现方式: 对联广告以长方形图片的形式显示于页面顶部两侧，形似一幅对联，通常使用宽小高大的长方形图片或 Flash 的形式。对联广告一般只在使用像素约定主表格宽度的情况下使用，如使用超过 90% 以上的百分比约定主表格宽度时，可能会影响访问者的正常浏览。当访问者浏览器宽度小于 800 像素时，自动不显示此类广告。当前页面有多个对联广告时，系统会随机选取其中之一显示。&lt;br&gt;价值分析: 对联广告由于只展现于高分辨率(1024x768 或更高)屏幕的两侧，只占用页面的空白区域，因此不会招致访问者反感，能够良好的突出推广内容。但由于对分辨率和主表格宽度的特殊要求，使得广告的受众比例无法达到 100%。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=forumdisplay&amp;amp;fid=71&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;广告列表-论坛-群组-帖间通栏广告&quot;&gt;&lt;a href=&quot;#广告列表-论坛-群组-帖间通栏广告&quot; class=&quot;headerlink&quot; title=&quot;广告列表 - 论坛/群组 帖间通栏广告&quot;&gt;&lt;/a&gt;广告列表 - 论坛/群组 帖间通栏广告&lt;/h4&gt;&lt;p&gt;展现方式: 帖间通栏广告显示于主题帖和第一个回帖之间，可使用 468x60 或其他尺寸图片和 Flash 的形式。&lt;br&gt;当前页面有多个帖间通栏广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 由于能够将主题与回帖分开，广告尺寸大而且不影响帖子内容，因此不会招致帖子作者及访问者反感，适合在帖内进行商业宣传或品牌推广。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://ohiocssa.com/forum.php?mod=viewthread&amp;amp;tid=32&amp;amp;extra=page%3D1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;论坛-群组-帖内广告&quot;&gt;&lt;a href=&quot;#论坛-群组-帖内广告&quot; class=&quot;headerlink&quot; title=&quot;论坛/群组 帖内广告&quot;&gt;&lt;/a&gt;论坛/群组 帖内广告&lt;/h4&gt;&lt;p&gt;展现方式: 帖内广告显示于帖子内容的上方、下方或右方，帖子内容的上方和下方通常使用文字的形式，帖子内容右方通常使用图片的形式。当前页面有多个帖内广告时，系统会从中抽取与每页帖数相等的条目进行随机显示。您可以在 全局设置中的其他设置中修改每帖显示的广告数量。&lt;br&gt;价值分析: 由于帖子是论坛最核心的组成部分，嵌入帖子内容内部的帖内广告，便可在用户浏览帖子内容时自然的被接受，加上随机播放的特性，适合于特定内容的有效推广，也可用于论坛自身的宣传和公告之用。建议设置多条帖内广告以实现广告内容的差异化，从而吸引更多访问者的注意力。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=viewthread&amp;amp;tid=16&amp;amp;extra=page%3D1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;门户-论坛-群组-空间-格子广告&quot;&gt;&lt;a href=&quot;#门户-论坛-群组-空间-格子广告&quot; class=&quot;headerlink&quot; title=&quot;门户/论坛/群组/空间 格子广告&quot;&gt;&lt;/a&gt;门户/论坛/群组/空间 格子广告&lt;/h4&gt;&lt;p&gt;展现方式: 页内文字广告以表格的形式，显示于论坛、群组页面的中上方，通常使用文字的形式，也可使用小图片和 Flash。当前页面有多个文字广告时，系统会以表格的形式按照设定的显示顺序全部展现，同时能够对表格列数在 3～5 的范围内动态排布，以自动实现最佳的广告排列效果。&lt;/p&gt;
-&lt;p&gt;价值分析: 由于此类广告通常以文字形式展现，但其所在的较靠上的页面位置，使得此类广告成为了访问者必读的内容之一。同一页面可以呈现多达十几条文字广告的特性，也决定了它是一种平民化但性价比较高的推广方式，同时还可用于论坛自身的宣传和公告之用。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=forumdisplay&amp;amp;fid=65&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;门户-文章列表广告&quot;&gt;&lt;a href=&quot;#门户-文章列表广告&quot; class=&quot;headerlink&quot; title=&quot;门户 文章列表广告&quot;&gt;&lt;/a&gt;门户 文章列表广告&lt;/h4&gt;&lt;p&gt;展现方式: 文章广告显示于频道文章分类的文章列表页面，分为顶部、底部 2 个投放位置。&lt;/p&gt;
-&lt;h4 id=&quot;广告列表-全局-漂浮广告&quot;&gt;&lt;a href=&quot;#广告列表-全局-漂浮广告&quot; class=&quot;headerlink&quot; title=&quot;广告列表 - 全局 漂浮广告&quot;&gt;&lt;/a&gt;广告列表 - 全局 漂浮广告&lt;/h4&gt;&lt;p&gt;展现方式: 漂浮广告展现于页面左下角，当页面滚动时广告会自行移动以保持原来的位置，通常使用小图片或 Flash 的形式。当前页面有多个漂浮广告时，系统会随机选取其中之一显示。&lt;/p&gt;
-&lt;p&gt;价值分析: 漂浮广告是进行强力商业推广的有效手段，其在页面中的浮动性，使其与固定的图片和文字相比，更容易被关注，正因为如此，这种强制性的关注也可能招致对此广告内容不感兴趣的访问者的反感。请注意不要将过大的图片或 Flash 以漂浮广告的形式显示，以免影响页面阅读。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.ohiocssa.com/forum.php?mod=forumdisplay&amp;amp;fid=62&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;广告形式&quot;&gt;&lt;a href=&quot;#广告形式&quot; class=&quot;headerlink&quot; title=&quot;广告形式&quot;&gt;&lt;/a&gt;广告形式&lt;/h3&gt;&lt;h4 id=&quot;帖子广告&quot;&gt;&lt;a href=&quot;#帖子广告&quot; class=&quot;headerlink&quot; title=&quot;帖子广告&quot;&gt;&lt;/a
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>OSU CCSS Compliance Notes - Ubuntu</title>
