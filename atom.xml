@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-02-23T03:02:30.549Z</updated>
+  <updated>2016-03-06T19:36:53.376Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python itertools</title>
+    <link href="http://zhenv5.github.io/2016/03/06/Python/Python-itertools/"/>
+    <id>http://zhenv5.github.io/2016/03/06/Python/Python-itertools/</id>
+    <published>2016-03-06T19:36:53.376Z</published>
+    <updated>2016-03-06T19:36:53.376Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/itertools.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;itertools: functions creating iterators for efficient looping&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Fall into three categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;infinite iterators&lt;/li&gt;
+&lt;li&gt;iterators terminating on the shortest input sequence&lt;/li&gt;
+&lt;li&gt;combinatoric generators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;chain&quot;&gt;&lt;a href=&quot;#chain&quot; class=&quot;headerlink&quot; title=&quot;chain&quot;&gt;&lt;/a&gt;chain&lt;/h4&gt;&lt;p&gt;Used for treating consecutive sequence as a single sequence&lt;/p&gt;
+&lt;p&gt;Equivalent to:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;chain&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(*iterables)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;# use * before iterables to collect all remaining arguments into a tuple&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; it &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; iterables:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; element &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; it:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt; element&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; element &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; it.chain(&lt;span class=&quot;string&quot;&gt;&quot;A&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;BCD&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;EFT&quot;&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; element&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Alternate constructor is &lt;strong&gt;from_iterable&lt;/strong&gt;:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; element &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; it.chain.from_iterable([&lt;span class=&quot;string&quot;&gt;&quot;ABC&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;DEFFFF&quot;&lt;/span&gt;]):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; element&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;combinations&quot;&gt;&lt;a href=&quot;#combinations&quot; class=&quot;headerlink&quot; title=&quot;combinations&quot;&gt;&lt;/a&gt;combinations&lt;/h4&gt;&lt;p&gt;return r length subsequences of elements from the input iterable&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(iterable,r)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; it.combinations(iterable,r)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;c = com([&lt;span class=&quot;string&quot;&gt;&quot;ABC&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;DEF&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;HI&quot;&lt;/span&gt;],&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; ele &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; c:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; ele&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;combinations(‘ABCD’, 2): AB,AC,AD,BC,BD,CD&lt;/li&gt;
+&lt;li&gt;combinations_with_replacement(‘ABCD’, 2): AA AB AC AD BB BC BD CC CD DD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More functions such as &lt;strong&gt;compress&lt;/strong&gt;, &lt;strong&gt;groupby&lt;/strong&gt;,&lt;strong&gt;ifilter&lt;/strong&gt;,&lt;strong&gt;izip&lt;/strong&gt;, can be viewed at itertools’ &lt;a href=&quot;https://docs.python.org/2/library/itertools.html#itertools.chain&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Recommendation: &lt;a href=&quot;http://www.oschina.net/translate/python-functions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Useful Python Functions and Features You Need to Know&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/itertools.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;itertools: functions creating iterators for eff
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="itertools" scheme="http://zhenv5.github.io/tags/itertools/"/>
+    
+  </entry>
   
   <entry>
     <title>OSU CCSS Compliance Notes - Ubuntu</title>
