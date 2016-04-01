@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-04-01T00:31:41.502Z</updated>
+  <updated>2016-04-01T20:44:44.297Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tensor Decomposition and Recommender Systems</title>
+    <link href="http://zhenv5.github.io/2016/04/01/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/"/>
+    <id>http://zhenv5.github.io/2016/04/01/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/</id>
+    <published>2016-04-01T20:44:44.297Z</published>
+    <updated>2016-04-01T20:44:44.297Z</updated>
+    
+    <content type="html">&lt;p&gt;Mainly from paper: &lt;a href=&quot;http://arxiv.org/pdf/1603.06038v1.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tensor Decomposition and Recommender Systems&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Tucker-Decomposition&quot;&gt;&lt;a href=&quot;#Tucker-Decomposition&quot; class=&quot;headerlink&quot; title=&quot;Tucker Decomposition&quot;&gt;&lt;/a&gt;Tucker Decomposition&lt;/h4&gt;&lt;p&gt;Tensor $\mathcal{T}$ can be factorized as: $\mathcal{T} = \mathcal{G} \times_1 U \times_2 V \times_3 W$ where &lt;em&gt;U&lt;/em&gt;, &lt;em&gt;V&lt;/em&gt; and &lt;em&gt;W&lt;/em&gt; are orthogonal matrices, and represent embedding of corresponding objects into a lower-dimensional latent factors space with dimensionalities  &lt;em&gt;r1&lt;/em&gt;, &lt;em&gt;r2&lt;/em&gt; and &lt;em&gt;r3&lt;/em&gt; correspondingly. The core tensor $\mathcal{G}$ defines the form and the strength of multilinear relations between all three entities in the latent feature space.&lt;/p&gt;
+&lt;h4 id=&quot;Online-Updates&quot;&gt;&lt;a href=&quot;#Online-Updates&quot; class=&quot;headerlink&quot; title=&quot;Online Updates&quot;&gt;&lt;/a&gt;Online Updates&lt;/h4&gt;&lt;p&gt;To deal with the problem of real-time recommendations, the authors adopt a well known &lt;em&gt;folding-in&lt;/em&gt; method [Information retrieval using a singular value decomposition model of latent semantic structure] to a higher order case. The folding-in procedure helps to quickly embed a previously unseen entity into the latent features space without recomputing the whole method.&lt;/p&gt;
+&lt;p&gt;Nevertheless, this typically leads to a loss of orthogonality in factors and negatively impacts the accuracy of the model in the long run. This can be avoided with an &lt;em&gt;incremental SVD update&lt;/em&gt;, which for the matrices with missing entries was initially proposed by [Incremental singular value decomposition of uncertain data with missing values].&lt;/p&gt;
+&lt;p&gt;A different incremental HOSVD-based model is proposed in [An Incremental Factorization Approach for Web Service Recommendation] for a highly dynamic, evolving environment, which used an extension of a two-dimensional incremental approach from [Incremental learning for robust visual tracking].&lt;/p&gt;
+&lt;h4 id=&quot;RTF-and-PITF&quot;&gt;&lt;a href=&quot;#RTF-and-PITF&quot; class=&quot;headerlink&quot; title=&quot;RTF and PITF&quot;&gt;&lt;/a&gt;RTF and PITF&lt;/h4&gt;&lt;p&gt;Ranking with TF model (RTF)[69] and more elaborate pairwise interaction TF (PITF)[70] model emphasize, all missing entries can be split into 2 groups: the true negative feedback and unknown values.&lt;/p&gt;
+&lt;p&gt;RTF model uses the Tucker format, it aims to directly maximizing AUC measure.&lt;/p&gt;
+&lt;p&gt;The PITF model is built on top of RTF. It adopts Bayesian Personalized Ranking (BPR) technique proposed for MF case in [67] to the ranking approach.&lt;/p&gt;
+&lt;h4 id=&quot;Improving-the-prediction-quality&quot;&gt;&lt;a href=&quot;#Improving-the-prediction-quality&quot; class=&quot;headerlink&quot; title=&quot;Improving the prediction quality&quot;&gt;&lt;/a&gt;Improving the prediction quality&lt;/h4&gt;&lt;p&gt;Some problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;high data sparsity typically leas to a less accurate predictive models&lt;/li&gt;
+&lt;li&gt;tag ambiguity and redundancy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CubeRec[Cubic Analysis of Social Bookmarking for Personalized Recommendation] proose a clustering-based separation mechanism, which builds clusters of triplets (user,item,tag) based on the proximity of tags derived from the item-tag matrix derived from the item-tag matrix. After the initial problem is split into a number of sub-problems(corresponding to clusters) of a smaller size and hence with dense data. Every subproblem is then factorized with the HOSVD similarly to [83], and the resulting model is constructed as a combination of all the smaller TF models.&lt;/p&gt;
+&lt;p&gt;Clustering-based HOSVD model (ClusterHOSVD)[Item Recommendation by Combing Semantically Enhanced Tag Clustering With Tensor HOSVD] also employ clustering approach. However, instead of splitting the problem, they replace tags by tag clusters and apply the HOSVD directly to the modified data consisting of (user,item,tag cluster) triplets.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mainly from paper: &lt;a href=&quot;http://arxiv.org/pdf/1603.06038v1.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tensor Decomposition and Recommender Sy
+    
+    </summary>
+    
+      <category term="Linear Algebra" scheme="http://zhenv5.github.io/categories/Linear-Algebra/"/>
+    
+    
+      <category term="recommender system" scheme="http://zhenv5.github.io/tags/recommender-system/"/>
+    
+      <category term="tensor" scheme="http://zhenv5.github.io/tags/tensor/"/>
+    
+  </entry>
   
   <entry>
     <title>argparse module in Python</title>
