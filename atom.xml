@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-03-27T22:29:20.450Z</updated>
+  <updated>2016-04-01T00:31:41.502Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>argparse module in Python</title>
+    <link href="http://zhenv5.github.io/2016/03/31/Python/argparse-module/"/>
+    <id>http://zhenv5.github.io/2016/03/31/Python/argparse-module/</id>
+    <published>2016-04-01T00:31:41.502Z</published>
+    <updated>2016-04-01T00:31:41.502Z</updated>
+    
+    <content type="html">&lt;p&gt;The &lt;a href=&quot;https://docs.python.org/3/library/argparse.html#action&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;argparse&lt;/a&gt; is module in Python used to write user-friendly command-line interface.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;&#39;&#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Demo of argparse: Parser for command-line options, arguments and sub-commands&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&#39;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; argparse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; __name__ == &lt;span class=&quot;string&quot;&gt;&quot;__main__&quot;&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; parse = argparse.ArgumentParser(description = &lt;span class=&quot;string&quot;&gt;&quot;Demo of argpase&quot;&lt;/span&gt;,prog = &lt;span class=&quot;string&quot;&gt;&quot;argparse-demo&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; parse.add_argument(&lt;span class=&quot;string&quot;&gt;&quot;-a&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;--aa&quot;&lt;/span&gt;,help = &lt;span class=&quot;string&quot;&gt;&#39;parameter a which is a integer&#39;&lt;/span&gt;,required = &lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; parse.add_argument(&lt;span class=&quot;string&quot;&gt;&quot;-b&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;--bb&quot;&lt;/span&gt;,help = &lt;span class=&quot;string&quot;&gt;&#39;parameter b which is a boolean&#39;&lt;/span&gt;,required = &lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;,action = &lt;span class=&quot;string&quot;&gt;&quot;store_true&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; args = parse.parse_args()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; args.aa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; args.bb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Three steps in using argparse.&lt;/p&gt;
+&lt;h4 id=&quot;Creating-a-Parser&quot;&gt;&lt;a href=&quot;#Creating-a-Parser&quot; class=&quot;headerlink&quot; title=&quot;Creating a Parser&quot;&gt;&lt;/a&gt;Creating a Parser&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;parse = argparse.ArgumentParser(description = &lt;span class=&quot;string&quot;&gt;&quot;Demo of argpase&quot;&lt;/span&gt;,prog = &lt;span class=&quot;string&quot;&gt;&quot;argparse-demo&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/argparse.html#prog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;prog&lt;/a&gt;: the name of the program&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/library/argparse.html#description&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;description&lt;/a&gt;: Text to display before the argument help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Adding-arguments&quot;&gt;&lt;a href=&quot;#Adding-arguments&quot; class=&quot;headerlink&quot; title=&quot;Adding arguments&quot;&gt;&lt;/a&gt;Adding arguments&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;parse.add_argument(&lt;span class=&quot;string&quot;&gt;&quot;-a&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;--aa&quot;&lt;/span&gt;,help = &lt;span class=&quot;string&quot;&gt;&#39;parameter a which is a integer&#39;&lt;/span&gt;,required = &lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More about the add_argument() method can be viewed at &lt;a href=&quot;https://docs.python.org/3/library/argparse.html#description&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;Parsing-arguments&quot;&gt;&lt;a href=&quot;#Parsing-arguments&quot; class=&quot;headerlink&quot; title=&quot;Parsing arguments&quot;&gt;&lt;/a&gt;Parsing arguments&lt;/h4&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;args = parse.parse_args()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; args.aa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; args.bb&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;Demo codes can be viewed at &lt;a href=&quot;https://github.com/zhenv5/WayToPython/blob/master/Code/argparser-demo.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EOF&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The &lt;a href=&quot;https://docs.python.org/3/library/argparse.html#action&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;argparse&lt;/a&gt; is module in Python used
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://zhenv5.github.io/tags/Python/"/>
+    
+      <category term="argparse" scheme="http://zhenv5.github.io/tags/argparse/"/>
+    
+  </entry>
   
   <entry>
     <title>Way to Python Tips</title>
