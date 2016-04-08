@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-04-01T20:44:44.297Z</updated>
+  <updated>2016-04-08T18:14:47.589Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python Notebook Jupyter</title>
+    <link href="http://zhenv5.github.io/2016/04/08/Python/Python-Notebook-Jupyter/"/>
+    <id>http://zhenv5.github.io/2016/04/08/Python/Python-Notebook-Jupyter/</id>
+    <published>2016-04-08T18:14:47.589Z</published>
+    <updated>2016-04-08T18:14:47.589Z</updated>
+    
+    <content type="html">&lt;p&gt;Why not try Jupyter&lt;/p&gt;
+&lt;h4 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h4&gt;&lt;p&gt;Install:&lt;/p&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; jupyter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Upgrade:&lt;/p&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo pip &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; -U jupyter&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Run:&lt;/p&gt;
+&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;title&quot;&gt;jupyter&lt;/span&gt; notebook&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;If it reminds you that &lt;em&gt;command not found&lt;/em&gt;, please use below command instead:&lt;/p&gt;
+&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;~/.&lt;span class=&quot;keyword&quot;&gt;local&lt;/span&gt;/bin/jupyter-notebook&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;The notebook should be started, then use &lt;a href=&quot;http://localhost:8888/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:8888/&lt;/a&gt; to visit the notebook.&lt;/p&gt;
+&lt;p&gt;More commands can be viewed at &lt;a href=&quot;http://jupyter.readthedocs.org/en/latest/running.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Runing Jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note that the home directory Jupyter opens is as same as your working directory in the terminal.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Why not try Jupyter&lt;/p&gt;
+&lt;h4 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h4&gt;&lt;p&gt;Install:&lt;/p&gt;
+&lt;figure cl
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="Jupyter" scheme="http://zhenv5.github.io/tags/Jupyter/"/>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Tensor Decomposition and Recommender Systems</title>
-    <link href="http://zhenv5.github.io/2016/04/01/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/"/>
-    <id>http://zhenv5.github.io/2016/04/01/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/</id>
-    <published>2016-04-01T20:44:44.297Z</published>
-    <updated>2016-04-01T20:44:44.297Z</updated>
+    <link href="http://zhenv5.github.io/2016/04/07/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/"/>
+    <id>http://zhenv5.github.io/2016/04/07/Machine-Learning-and-Data-Mining/Tensor-Decomposition-and-Recommender-Systems/</id>
+    <published>2016-04-08T01:57:26.259Z</published>
+    <updated>2016-04-08T01:57:26.259Z</updated>
     
     <content type="html">&lt;p&gt;Mainly from paper: &lt;a href=&quot;http://arxiv.org/pdf/1603.06038v1.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tensor Decomposition and Recommender Systems&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&quot;Tucker-Decomposition&quot;&gt;&lt;a href=&quot;#Tucker-Decomposition&quot; class=&quot;headerlink&quot; title=&quot;Tucker Decomposition&quot;&gt;&lt;/a&gt;Tucker Decomposition&lt;/h4&gt;&lt;p&gt;Tensor $\mathcal{T}$ can be factorized as: $\mathcal{T} = \mathcal{G} \times_1 U \times_2 V \times_3 W$ where &lt;em&gt;U&lt;/em&gt;, &lt;em&gt;V&lt;/em&gt; and &lt;em&gt;W&lt;/em&gt; are orthogonal matrices, and represent embedding of corresponding objects into a lower-dimensional latent factors space with dimensionalities  &lt;em&gt;r1&lt;/em&gt;, &lt;em&gt;r2&lt;/em&gt; and &lt;em&gt;r3&lt;/em&gt; correspondingly. The core tensor $\mathcal{G}$ defines the form and the strength of multilinear relations between all three entities in the latent feature space.&lt;/p&gt;
@@ -37,6 +75,9 @@
 &lt;/ul&gt;
 &lt;p&gt;CubeRec[Cubic Analysis of Social Bookmarking for Personalized Recommendation] proose a clustering-based separation mechanism, which builds clusters of triplets (user,item,tag) based on the proximity of tags derived from the item-tag matrix derived from the item-tag matrix. After the initial problem is split into a number of sub-problems(corresponding to clusters) of a smaller size and hence with dense data. Every subproblem is then factorized with the HOSVD similarly to [83], and the resulting model is constructed as a combination of all the smaller TF models.&lt;/p&gt;
 &lt;p&gt;Clustering-based HOSVD model (ClusterHOSVD)[Item Recommendation by Combing Semantically Enhanced Tag Clustering With Tensor HOSVD] also employ clustering approach. However, instead of splitting the problem, they replace tags by tag clusters and apply the HOSVD directly to the modified data consisting of (user,item,tag cluster) triplets.&lt;/p&gt;
+&lt;h4 id=&quot;Usefule-Links&quot;&gt;&lt;a href=&quot;#Usefule-Links&quot; class=&quot;headerlink&quot; title=&quot;Usefule Links&quot;&gt;&lt;/a&gt;Usefule Links&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.offconvex.org/2015/12/17/tensor-decompositions/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tensor Methods in Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
