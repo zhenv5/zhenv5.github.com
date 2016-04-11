@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-04-11T02:50:07.797Z</updated>
+  <updated>2016-04-11T03:26:55.725Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Data Visualization Tools</title>
+    <link href="http://zhenv5.github.io/2016/04/10/Machine-Learning-and-Data-Mining/Data-Visualization-Tools/"/>
+    <id>http://zhenv5.github.io/2016/04/10/Machine-Learning-and-Data-Mining/Data-Visualization-Tools/</id>
+    <published>2016-04-11T03:26:55.725Z</published>
+    <updated>2016-04-11T03:26:55.725Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Tools&quot;&gt;&lt;a href=&quot;#Tools&quot; class=&quot;headerlink&quot; title=&quot;Tools&quot;&gt;&lt;/a&gt;Tools&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wentu.io/showcase&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文图&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://zhuanlan.zhihu.com/hemingke&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数据冰山知乎专栏&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Tools&quot;&gt;&lt;a href=&quot;#Tools&quot; class=&quot;headerlink&quot; title=&quot;Tools&quot;&gt;&lt;/a&gt;Tools&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wentu.io/showcase&quot; target=&quot;_blank&quot; r
+    
+    </summary>
+    
+      <category term="Visualization" scheme="http://zhenv5.github.io/categories/Visualization/"/>
+    
+    
+      <category term="visualization" scheme="http://zhenv5.github.io/tags/visualization/"/>
+    
+  </entry>
   
   <entry>
     <title>Deep Learning Resources</title>
