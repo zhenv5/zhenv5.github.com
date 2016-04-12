@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-04-11T03:26:55.725Z</updated>
+  <updated>2016-04-12T18:27:11.568Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,91 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OSC Tutorial</title>
+    <link href="http://zhenv5.github.io/2016/04/12/Others/OSC-Tutorial/"/>
+    <id>http://zhenv5.github.io/2016/04/12/Others/OSC-Tutorial/</id>
+    <published>2016-04-12T18:27:11.568Z</published>
+    <updated>2016-04-12T18:27:11.568Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Procedure&quot;&gt;&lt;a href=&quot;#Procedure&quot; class=&quot;headerlink&quot; title=&quot;Procedure&quot;&gt;&lt;/a&gt;Procedure&lt;/h3&gt;&lt;p&gt;How to add python packages using the conda package manager&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Load proper python module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;module load python/&lt;span class=&quot;number&quot;&gt;2.7&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Clone python installation to local directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;conda &lt;span class=&quot;operator&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;create&lt;/span&gt; -&lt;span class=&quot;keyword&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--clone=&quot;$PYTHON_HOME&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Activate clone environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;source &lt;span class=&quot;command&quot;&gt;activate&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;local&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Install package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight cmake&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;conda &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; yt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;replace &lt;em&gt;yt&lt;/em&gt; with the name of the package you want to install.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Test python package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight mel&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;python&lt;/span&gt; -c &lt;span class=&quot;string&quot;&gt;&quot;import yt;print yt.__file__&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;replace both instance of &lt;em&gt;yt&lt;/em&gt; with the name of the package you installed.&lt;/p&gt;
+&lt;p&gt;&amp;gt;&lt;br&gt;Remember, you will need to load the proper version of python before you go to use your newlly installed package.  Packages are only installed to one version of python.&lt;/p&gt;
+&lt;p&gt;Hot to install your own python modules can be viewd at &lt;a href=&quot;https://www.osc.edu/documentation/howto/install-your-own-python-modules&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Procedure&quot;&gt;&lt;a href=&quot;#Procedure&quot; class=&quot;headerlink&quot; title=&quot;Procedure&quot;&gt;&lt;/a&gt;Procedure&lt;/h3&gt;&lt;p&gt;How to add python packages using the conda
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="OSC" scheme="http://zhenv5.github.io/tags/OSC/"/>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deep Learning Resources</title>
+    <link href="http://zhenv5.github.io/2016/04/12/Machine-Learning-and-Data-Mining/Deep-Learning-Resources/"/>
+    <id>http://zhenv5.github.io/2016/04/12/Machine-Learning-and-Data-Mining/Deep-Learning-Resources/</id>
+    <published>2016-04-12T18:15:58.844Z</published>
+    <updated>2016-04-12T18:15:58.844Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Deep-Learning-Text-Book&quot;&gt;&lt;a href=&quot;#Deep-Learning-Text-Book&quot; class=&quot;headerlink&quot; title=&quot;Deep Learning Text Book&quot;&gt;&lt;/a&gt;Deep Learning Text Book&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Text Book&lt;/a&gt; by Ian Goodfellow, Yoshua Bengio and Aaron Courville&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://deeplearning.net/tutorial/deeplearning.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Tutorial&lt;/a&gt; by LISA Lab&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Methods and Applications&lt;/a&gt; by Li Deng and Dong Yu.&lt;/p&gt;
+&lt;h3 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://randomekek.github.io/deep/deeplearning.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning for Beginners&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Open-sources&quot;&gt;&lt;a href=&quot;#Open-sources&quot; class=&quot;headerlink&quot; title=&quot;Open sources&quot;&gt;&lt;/a&gt;Open sources&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://keras.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Keras: deep learning library for theano and tensorflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Games-based-on-deep-learning&quot;&gt;&lt;a href=&quot;#Games-based-on-deep-learning&quot; class=&quot;headerlink&quot; title=&quot;Games based on deep learning&quot;&gt;&lt;/a&gt;Games based on deep learning&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bitwise-ben/Fruit/blob/master/qlearning.py.ipynb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Q-learning example in Keras&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Deep-Learning-Text-Book&quot;&gt;&lt;a href=&quot;#Deep-Learning-Text-Book&quot; class=&quot;headerlink&quot; title=&quot;Deep Learning Text Book&quot;&gt;&lt;/a&gt;Deep Learning Tex
+    
+    </summary>
+    
+      <category term="Deep Learning" scheme="http://zhenv5.github.io/categories/Deep-Learning/"/>
+    
+    
+      <category term="deep learning" scheme="http://zhenv5.github.io/tags/deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>Data Visualization Tools</title>
@@ -39,36 +124,6 @@
     
     
       <category term="visualization" scheme="http://zhenv5.github.io/tags/visualization/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Deep Learning Resources</title>
-    <link href="http://zhenv5.github.io/2016/04/10/Machine-Learning-and-Data-Mining/Deep-Learning-Resources/"/>
-    <id>http://zhenv5.github.io/2016/04/10/Machine-Learning-and-Data-Mining/Deep-Learning-Resources/</id>
-    <published>2016-04-11T02:50:07.797Z</published>
-    <updated>2016-04-11T02:50:07.797Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;Deep-Learning-Text-Book&quot;&gt;&lt;a href=&quot;#Deep-Learning-Text-Book&quot; class=&quot;headerlink&quot; title=&quot;Deep Learning Text Book&quot;&gt;&lt;/a&gt;Deep Learning Text Book&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.deeplearningbook.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Text Book&lt;/a&gt; by Ian Goodfellow, Yoshua Bengio and Aaron Courville&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://deeplearning.net/tutorial/deeplearning.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Tutorial&lt;/a&gt; by LISA Lab&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning Methods and Applications&lt;/a&gt; by Li Deng and Dong Yu. &lt;/p&gt;
-&lt;h3 id=&quot;Notes&quot;&gt;&lt;a href=&quot;#Notes&quot; class=&quot;headerlink&quot; title=&quot;Notes&quot;&gt;&lt;/a&gt;Notes&lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://randomekek.github.io/deep/deeplearning.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning for Beginners&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Deep-Learning-Text-Book&quot;&gt;&lt;a href=&quot;#Deep-Learning-Text-Book&quot; class=&quot;headerlink&quot; title=&quot;Deep Learning Text Book&quot;&gt;&lt;/a&gt;Deep Learning Tex
-    
-    </summary>
-    
-      <category term="Deep Learning" scheme="http://zhenv5.github.io/categories/Deep-Learning/"/>
-    
-    
-      <category term="deep learning" scheme="http://zhenv5.github.io/tags/deep-learning/"/>
     
   </entry>
   
@@ -843,39 +898,6 @@
     
       &lt;p&gt;Hexo is a very powerful blog framework, which can be applied to your own github pages. &lt;/p&gt;
 &lt;h3 id=&quot;Requirements&quot;&gt;&lt;a href=&quot;#Requirements&quot;
-    
-    </summary>
-    
-      <category term="Tech" scheme="http://zhenv5.github.io/categories/Tech/"/>
-    
-    
-      <category term="Github" scheme="http://zhenv5.github.io/tags/Github/"/>
-    
-      <category term="Hexo" scheme="http://zhenv5.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello Hexo</title>
-    <link href="http://zhenv5.github.io/2016/02/15/Hello-Hexo/"/>
-    <id>http://zhenv5.github.io/2016/02/15/Hello-Hexo/</id>
-    <published>2016-02-15T19:23:44.450Z</published>
-    <updated>2016-02-15T19:23:44.450Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
     
