@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-04-15T18:18:44.809Z</updated>
+  <updated>2016-04-20T18:23:56.697Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Matplotlib save fig to pdf</title>
+    <link href="http://zhenv5.github.io/2016/04/20/Python/Matplotlib-savefig-to-pdf/"/>
+    <id>http://zhenv5.github.io/2016/04/20/Python/Matplotlib-savefig-to-pdf/</id>
+    <published>2016-04-20T18:23:56.697Z</published>
+    <updated>2016-04-20T18:23:56.697Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Savefig-to-pdf-format&quot;&gt;&lt;a href=&quot;#Savefig-to-pdf-format&quot; class=&quot;headerlink&quot; title=&quot;Savefig to pdf format&quot;&gt;&lt;/a&gt;Savefig to pdf format&lt;/h3&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; numpy &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; np&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; pandas &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; pd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;scatter&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(x, y, alpha  =&lt;span class=&quot;number&quot;&gt;0.5&lt;/span&gt;, color = &lt;span class=&quot;string&quot;&gt;&quot;r&quot;&lt;/span&gt;, save_file = &lt;span class=&quot;string&quot;&gt;&quot;scatter_plot&quot;&lt;/span&gt;, format = &lt;span class=&quot;string&quot;&gt;&quot;pdf&quot;&lt;/span&gt;, show = True, grid = False, xlabel = &lt;span class=&quot;string&quot;&gt;&quot;x&quot;&lt;/span&gt;, ylabel = &lt;span class=&quot;string&quot;&gt;&quot;y&quot;&lt;/span&gt;, title = &lt;span class=&quot;string&quot;&gt;&quot;Scatter Plot&quot;&lt;/span&gt;)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;string&quot;&gt;&#39;&#39;&#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	input: X, Y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	output: scatter plot&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&#39;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	fig = plt.Figure()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	fig.set_canvas(plt.gcf().canvas)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	plt.scatter(x,y, alpha=&lt;span class=&quot;number&quot;&gt;0.5&lt;/span&gt;,color = color)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; grid:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		plt.grid(&lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	plt.xlabel(xlabel)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	plt.ylabel(ylabel)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	plt.title(title)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; show:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		plt.show()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	fig.savefig(save_file + &lt;span class=&quot;string&quot;&gt;&quot;.&quot;&lt;/span&gt; + format, format = format)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Source File can be viewed at &lt;a href=&quot;https://github.com/zhenv5/WayToPython/blob/master/sun-lib/visualize_options.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Savefig-to-pdf-format&quot;&gt;&lt;a href=&quot;#Savefig-to-pdf-format&quot; class=&quot;headerlink&quot; title=&quot;Savefig to pdf format&quot;&gt;&lt;/a&gt;Savefig to pdf format&lt;/
+    
+    </summary>
+    
+      <category term="Matplotlib" scheme="http://zhenv5.github.io/categories/Matplotlib/"/>
+    
+    
+      <category term="Matplotlib" scheme="http://zhenv5.github.io/tags/Matplotlib/"/>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Crontab</title>
@@ -821,43 +847,6 @@
       <category term="Module" scheme="http://zhenv5.github.io/tags/Module/"/>
     
       <category term="Progressbar" scheme="http://zhenv5.github.io/tags/Progressbar/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Usage of Subprocess Module in Python</title>
-    <link href="http://zhenv5.github.io/2016/02/15/Python/Usage-of-Subprocess-Module-in-Python/"/>
-    <id>http://zhenv5.github.io/2016/02/15/Python/Usage-of-Subprocess-Module-in-Python/</id>
-    <published>2016-02-15T22:11:12.500Z</published>
-    <updated>2016-02-15T05:11:44.000Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;subprocess-module-in-python&quot;&gt;&lt;a href=&quot;#subprocess-module-in-python&quot; class=&quot;headerlink&quot; title=&quot;subprocess module in python&quot;&gt;&lt;/a&gt;subprocess module in python&lt;/h3&gt;&lt;p&gt;The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes. It intends to replace several older modules and functions such as: os.system, os.spawn, os.popen, popen2 and commands. &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/2/library/subprocess.html#module-subprocess&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python document: subprocess - subprocess management&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;Running-via-the-shell&quot;&gt;&lt;a href=&quot;#Running-via-the-shell&quot; class=&quot;headerlink&quot; title=&quot;Running via the shell&quot;&gt;&lt;/a&gt;Running via the shell&lt;/h3&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; subprocess&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.call(&lt;span class=&quot;string&quot;&gt;&#39;ls -al&#39;&lt;/span&gt;,shell=&lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.check_call([&lt;span class=&quot;string&quot;&gt;&#39;ls&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;-al&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.check_output(&lt;span class=&quot;string&quot;&gt;&#39;ls -al&#39;&lt;/span&gt;,shell=&lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.check_output([&lt;span class=&quot;string&quot;&gt;&#39;ls&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;-al&#39;&lt;/span&gt;])&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Above are basic usages.&lt;/p&gt;
-&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;check_output&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;([&lt;span class=&quot;string&quot;&gt;&#39;ls&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;-al&#39;&lt;/span&gt;])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;check_call&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;([&lt;span class=&quot;string&quot;&gt;&#39;ls&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;-al&#39;&lt;/span&gt;])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;The first item in list is the executable and rest are its command line arguments. &lt;/p&gt;
-&lt;p&gt;Both &lt;strong&gt;call&lt;/strong&gt; and &lt;strong&gt;check_call&lt;/strong&gt; can return the return code after running the command. The difference is check_call raises a CalledProcessError if the return code is non-zero.&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.call(&lt;span class=&quot;string&quot;&gt;&#39;ls -al&#39;&lt;/span&gt;,shell=&lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.check_output(&lt;span class=&quot;string&quot;&gt;&#39;ls -al&#39;&lt;/span&gt;,shell=&lt;span class=&quot;keyword&quot;&gt;True&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ls_output = subprocess.check_output([&lt;span class=&quot;string&quot;&gt;&#39;ls&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;-al&#39;&lt;/span&gt;]])&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;check_ouput&lt;/strong&gt; can run command with arguments and return its output as a byte string. &lt;/p&gt;
-&lt;p&gt;With &lt;em&gt;shell&lt;/em&gt; setting to &lt;em&gt;True&lt;/em&gt;, we can pass the commands as a &lt;em&gt;string&lt;/em&gt; not a &lt;em&gt;list&lt;/em&gt;. The program actually gets executed is the OS default shell, &lt;em&gt;/bin/sh&lt;/em&gt; on linux and &lt;em&gt;cmd.exe&lt;/em&gt; on windows. This can be changed with the &lt;em&gt;executable&lt;/em&gt; argument.&lt;/p&gt;
-&lt;h3 id=&quot;reference&quot;&gt;&lt;a href=&quot;#reference&quot; class=&quot;headerlink&quot; title=&quot;reference&quot;&gt;&lt;/a&gt;reference&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://sharats.me/the-ever-useful-and-neat-subprocess-module.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The ever useful and neat subprocess module&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;subprocess-module-in-python&quot;&gt;&lt;a href=&quot;#subprocess-module-in-python&quot; class=&quot;headerlink&quot; title=&quot;subprocess module in python&quot;&gt;&lt;/a&gt;subpr
-    
-    </summary>
-    
-      <category term="Programming" scheme="http://zhenv5.github.io/categories/Programming/"/>
-    
-    
-      <category term="Module" scheme="http://zhenv5.github.io/tags/Module/"/>
-    
-      <category term="Python" scheme="http://zhenv5.github.io/tags/Python/"/>
-    
-      <category term="Subprocess" scheme="http://zhenv5.github.io/tags/Subprocess/"/>
     
   </entry>
   

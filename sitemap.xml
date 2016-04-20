@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhenv5.github.io/2016/04/20/Python/Matplotlib-savefig-to-pdf/</loc>
+    
+    <lastmod>2016-04-20T18:23:56.697Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhenv5.github.io/2016/04/15/Others/Crontab-Run-Scripts-Automically/</loc>
     
     <lastmod>2016-04-15T18:18:44.809Z</lastmod>
