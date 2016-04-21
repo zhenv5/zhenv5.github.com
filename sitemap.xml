@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhenv5.github.io/2016/04/21/Python/String-format-in-Python/</loc>
+    
+    <lastmod>2016-04-21T17:57:18.420Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhenv5.github.io/2016/04/20/Python/Matplotlib-savefig-to-pdf/</loc>
     
     <lastmod>2016-04-20T18:23:56.697Z</lastmod>
