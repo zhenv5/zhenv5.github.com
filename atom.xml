@@ -365,53 +365,6 @@
   </entry>
   
   <entry>
-    <title>微博关系模型</title>
-    <link href="http://zhenv5.github.io/2016/03/27/Social-Network/%E5%BE%AE%E5%8D%9A%E7%94%A8%E6%88%B7%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://zhenv5.github.io/2016/03/27/Social-Network/微博用户关系模型/</id>
-    <published>2016-03-27T22:20:18.650Z</published>
-    <updated>2016-03-27T22:19:36.462Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;微博用户关系模型&quot;&gt;&lt;a href=&quot;#微博用户关系模型&quot; class=&quot;headerlink&quot; title=&quot;微博用户关系模型&quot;&gt;&lt;/a&gt;微博用户关系模型&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;微博中的用户视作节点，用户间之间的关系视作节点之间的边，节点和边构成社交网络的拓扑结构，称之为社交图谱。&lt;br&gt;微博中的信息从社交图谱中的某个节点出发，通过边来传播。&lt;/p&gt;
-&lt;p&gt;但是信息在网络中的流动是有差别的，信息的起始点（信息的生产者），信息流动过程经历的节点（信息的传播者），节点之间关系的强弱（传播者相对生产者的亲密程度），以及节点之间构成的关系圈，都会影响信息传播的深度以及广度。&lt;/p&gt;
-&lt;h3 id=&quot;微博用户关系模型-1&quot;&gt;&lt;a href=&quot;#微博用户关系模型-1&quot; class=&quot;headerlink&quot; title=&quot;微博用户关系模型&quot;&gt;&lt;/a&gt;微博用户关系模型&lt;/h3&gt;&lt;h4 id=&quot;量化节点的传播能力：传播力&quot;&gt;&lt;a href=&quot;#量化节点的传播能力：传播力&quot; class=&quot;headerlink&quot; title=&quot;量化节点的传播能力：传播力&quot;&gt;&lt;/a&gt;量化节点的传播能力：传播力&lt;/h4&gt;&lt;p&gt;从信息传播的角度来看，当信息沿着边流经不同节点的时候，有些用户产生或传播的内容会影响到更多的用户，而有些用户的影响则有限。不同用户带来的传播受益（信息传播的广度以及深度）也不一样。微博中用传播力来量化这一重要程度。&lt;/p&gt;
-&lt;p&gt;传播力的计算基于的假设：&lt;strong&gt;传播力沿着信息传播的路径反向传递&lt;/strong&gt;。通俗解释是传播力越高的用户在传播一条微博的时候，传递给上一级用户的传播力也越高；一个用户发出的微博被传播力高的用户转发，他的传播力也越高。这个假设与Pagerank的计算类似。&lt;/p&gt;
-&lt;h4 id=&quot;计算关系边强度：亲密度&quot;&gt;&lt;a href=&quot;#计算关系边强度：亲密度&quot; class=&quot;headerlink&quot; title=&quot;计算关系边强度：亲密度&quot;&gt;&lt;/a&gt;计算关系边强度：亲密度&lt;/h4&gt;&lt;p&gt;微博中通过方向性来区分关系边。 任意两个用户之间的关系存在三种情况（1关注2，2关注1，1和2相互关注）。但相同类型的关系边存在强弱的关系。方向性可视为定性的描述，关系强度则视为关系边的定量描述。称关系边之间的强弱程度为&lt;strong&gt;亲密度&lt;/strong&gt;。由于关系边存在方向性，亲密度是指一个用户对另外一个用户的关注程度，衡量该有向边的强度。&lt;/p&gt;
-&lt;p&gt;能够反映亲密度的互动行为都应该被纳入到亲密度的计算当中。比如微博中的评论，转发，赞，提及行为。这些行为都有一定的权重。此外还应考虑用户之间的关系类型以及用户本身的互动频率。一般认为互粉关系的亲密程度比单向关注关系的亲密度高。有些用户比较活跃，乐于互动，体现出来的与其他用户的互动行为较多，并不能说明这些用户比较亲密，相反用户比较沉默，互动行为表现出来的亲密程度却更可靠。&lt;/p&gt;
-&lt;h4 id=&quot;关系协同-粉丝相似度-以及-关注相似度&quot;&gt;&lt;a href=&quot;#关系协同-粉丝相似度-以及-关注相似度&quot; class=&quot;headerlink&quot; title=&quot;关系协同: 粉丝相似度 以及 关注相似度&quot;&gt;&lt;/a&gt;关系协同: 粉丝相似度 以及 关注相似度&lt;/h4&gt;&lt;p&gt;协同体现了群体的智慧，无需关心item属性，仅仅通过user对item的评价（购买，点击，评分都可以量化为一种评价）来推测user之间或item之间的相似。&lt;/p&gt;
-&lt;p&gt;如果将一个用户对另外一个用户的关注视为一种评价，利用用户之间的关注构建关系矩阵，则很容易利用协同过滤的方式来计算用户之间的相似性。&lt;/p&gt;
-&lt;h4 id=&quot;推导关系的延伸-二度关系&quot;&gt;&lt;a href=&quot;#推导关系的延伸-二度关系&quot; class=&quot;headerlink&quot; title=&quot;推导关系的延伸 - 二度关系&quot;&gt;&lt;/a&gt;推导关系的延伸 - 二度关系&lt;/h4&gt;&lt;p&gt;六度关系理论肯定了人与人之间的普遍联系，对于社交媒体中的用户关系也可以突破一度关系来进行延伸。二度关系也存在强度衡量的问题。二度关系的强弱通常考虑两个方面的因素：桥梁的数量，与桥梁之间的亲密度。&lt;/p&gt;
-&lt;h4 id=&quot;关系聚合：关系圈&quot;&gt;&lt;a href=&quot;#关系聚合：关系圈&quot; class=&quot;headerlink&quot; title=&quot;关系聚合：关系圈&quot;&gt;&lt;/a&gt;关系聚合：关系圈&lt;/h4&gt;&lt;p&gt;社交媒体中用户之间的关系和社会关系存在很大的相似性。关系圈圈定了一系列互相存在关联的人，这些人之间不一定两两认识，但是一定存在某种紧密的关联，而圈外人与关系圈则不具备这种关联，另外一个人可以身处不同的关系圈。&lt;/p&gt;
-&lt;p&gt;对于微博用户，根系关系网络的拓扑结构进行关系圈的挖掘，实际上就是根据网络的内部紧密程度进行划分（图切分），被划分到相同的子网络内的节点之间趋于一致的关系，这种图切分通常分为三步进行。&lt;/p&gt;
-&lt;h5 id=&quot;发现极大团&quot;&gt;&lt;a href=&quot;#发现极大团&quot; class=&quot;headerlink&quot; title=&quot;发现极大团&quot;&gt;&lt;/a&gt;发现极大团&lt;/h5&gt;&lt;p&gt;所谓极大团 (Maximum Clique),就是图里面的子图，其中所有的节点之间两两存在关系边，是一种极强的约束，通过遍历关系拓扑图，得到这种关系最紧密的用户群体。在极大团里面，任何一个用户都与其他用户之间存在双向好友关系。&lt;/p&gt;
-&lt;h5 id=&quot;关系圈扩张&quot;&gt;&lt;a href=&quot;#关系圈扩张&quot; class=&quot;headerlink&quot; title=&quot;关系圈扩张&quot;&gt;&lt;/a&gt;关系圈扩张&lt;/h5&gt;&lt;p&gt;社会关系的社交圈的约束并不像极大团这么强，同处一个社交圈的人不一定相互认识，也可能只是由于某些中间人导致他们存在一定的关联。因此在极大团的基础上，还需要对关系圈进行扩展。扩展中需要指定一个标准来判定某个用户是否能够划分到某个特定的关系圈： &lt;strong&gt;向某个关系圈引入一个新节点后，该关系圈的内部的紧密程度增加带来的收益是大于关系之间关联性增加带来的损失&lt;/strong&gt;。通过定义一个与关系圈内部紧密程度正相关，关系圈之间关联程度负相关的评价函数，关系圈每扩展一个用户都通过该函数是否增加来进行判断是否扩展。&lt;/p&gt;
-&lt;h4 id=&quot;关系圈合并&quot;&gt;&lt;a href=&quot;#关系圈合并&quot; class=&quot;headerlink&quot; title=&quot;关系圈合并&quot;&gt;&lt;/a&gt;关系圈合并&lt;/h4&gt;&lt;p&gt;对于扩展结果中趋同的关系圈进行合并。当两个关系存在很大交集的时候将他们合并。同样合并过程需要遵循评价函数提升的原则。&lt;/p&gt;
-&lt;h3 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;传播力体现用户对信息传播的影响&lt;/li&gt;
-&lt;li&gt;亲密度体现了用户关系远近对信息传播的影响&lt;/li&gt;
-&lt;li&gt;粉丝相似度和关注相似度是从整个网络空间寻找具有相同认同感和被认同感的用户&lt;/li&gt;
-&lt;li&gt;二度关系是对一度关系的扩展和延伸&lt;/li&gt;
-&lt;li&gt;关系圈是从关系网络结构出发去寻找关联紧密的群体&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;以上关系是主机深入的：个体 -&amp;gt; 关联 -&amp;gt; 相似 -&amp;gt; 群体。&lt;/p&gt;
-&lt;h3 id=&quot;原文&quot;&gt;&lt;a href=&quot;#原文&quot; class=&quot;headerlink&quot; title=&quot;原文&quot;&gt;&lt;/a&gt;原文&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.wbrecom.com/?p=605&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;行走在网格之间：微博用户关系模型&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;微博用户关系模型&quot;&gt;&lt;a href=&quot;#微博用户关系模型&quot; class=&quot;headerlink&quot; title=&quot;微博用户关系模型&quot;&gt;&lt;/a&gt;微博用户关系模型&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; titl
-    
-    </summary>
-    
-      <category term="Network Analysis" scheme="http://zhenv5.github.io/categories/Network-Analysis/"/>
-    
-    
-      <category term="Network Analysis" scheme="http://zhenv5.github.io/tags/Network-Analysis/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Use Mysql in Python</title>
     <link href="http://zhenv5.github.io/2016/03/08/Python/Using-Mysql/"/>
     <id>http://zhenv5.github.io/2016/03/08/Python/Using-Mysql/</id>
@@ -848,6 +801,33 @@
     
     
       <category term="Binary Search Tree" scheme="http://zhenv5.github.io/tags/Binary-Search-Tree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Text progress bar library for Python</title>
+    <link href="http://zhenv5.github.io/2016/02/15/Python/Text-Progress-Bar-Library-for-Python/"/>
+    <id>http://zhenv5.github.io/2016/02/15/Python/Text-Progress-Bar-Library-for-Python/</id>
+    <published>2016-02-15T22:13:09.264Z</published>
+    <updated>2016-02-15T22:13:09.264Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;progressbar&quot;&gt;&lt;a href=&quot;#progressbar&quot; class=&quot;headerlink&quot; title=&quot;progressbar&quot;&gt;&lt;/a&gt;progressbar&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/niltonvolpato/python-progressbar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;python-progressbar&lt;/a&gt; is a text progress bar library for python.&lt;/p&gt;
+&lt;h3 id=&quot;examples&quot;&gt;&lt;a href=&quot;#examples&quot; class=&quot;headerlink&quot; title=&quot;examples&quot;&gt;&lt;/a&gt;examples&lt;/h3&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; progressbar &lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; ProgressBar&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pbar = ProgressBar()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; pbar(range(&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;)):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt; i&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;more examples can be viewed &lt;a href=&quot;https://github.com/niltonvolpato/python-progressbar/blob/master/examples.py&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;examples.py&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;progressbar&quot;&gt;&lt;a href=&quot;#progressbar&quot; class=&quot;headerlink&quot; title=&quot;progressbar&quot;&gt;&lt;/a&gt;progressbar&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/nilton
+    
+    </summary>
+    
+      <category term="Python" scheme="http://zhenv5.github.io/categories/Python/"/>
+    
+    
+      <category term="Module" scheme="http://zhenv5.github.io/tags/Module/"/>
+    
+      <category term="Progressbar" scheme="http://zhenv5.github.io/tags/Progressbar/"/>
     
   </entry>
   
