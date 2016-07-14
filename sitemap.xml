@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zhenv5.github.io/2016/07/14/Python/Way-to-Python/</loc>
+    
+    <lastmod>2016-07-14T13:40:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/05/17/Others/sublime_configuration/</loc>
+    
+    <lastmod>2016-05-17T07:47:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://zhenv5.github.io/2016/05/01/Social-Network/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</loc>
+    
+    <lastmod>2016-05-01T17:55:52.733Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zhenv5.github.io/2016/04/21/Python/String-format-in-Python/</loc>
     
     <lastmod>2016-04-21T17:57:18.420Z</lastmod>
@@ -61,13 +82,6 @@
     <loc>http://zhenv5.github.io/2016/03/31/Python/argparse-module/</loc>
     
     <lastmod>2016-04-01T00:31:41.502Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zhenv5.github.io/2016/03/27/Python/Way-to-Python/</loc>
-    
-    <lastmod>2016-03-27T22:29:20.450Z</lastmod>
     
   </url>
   
