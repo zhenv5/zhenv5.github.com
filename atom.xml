@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhenv5.github.io/"/>
-  <updated>2016-12-05T20:05:10.839Z</updated>
+  <updated>2016-12-05T21:02:00.021Z</updated>
   <id>http://zhenv5.github.io/</id>
   
   <author>
@@ -19,11 +19,10 @@
     <title>Eigenvalues and Eigenvectors</title>
     <link href="http://zhenv5.github.io/2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/"/>
     <id>http://zhenv5.github.io/2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/</id>
-    <published>2016-12-05T20:05:10.839Z</published>
-    <updated>2016-12-05T20:05:10.839Z</updated>
+    <published>2016-12-05T21:02:00.021Z</published>
+    <updated>2016-12-05T21:02:00.021Z</updated>
     
-    <content type="html">&lt;h4 id=&quot;Linear-Algebra-Eigenvalues-and-Eigenvectors&quot;&gt;&lt;a href=&quot;#Linear-Algebra-Eigenvalues-and-Eigenvectors&quot; class=&quot;headerlink&quot; title=&quot;Linear Algebra : Eigenvalues and Eigenvectors&quot;&gt;&lt;/a&gt;Linear Algebra : Eigenvalues and Eigenvectors&lt;/h4&gt;&lt;p&gt;@(Algebra)&lt;/p&gt;
-&lt;h4 id=&quot;Trace-and-determinant&quot;&gt;&lt;a href=&quot;#Trace-and-determinant&quot; class=&quot;headerlink&quot; title=&quot;Trace and determinant&quot;&gt;&lt;/a&gt;Trace and determinant&lt;/h4&gt;&lt;p&gt;A square matrix $A$ is called invertible if there is a square matrix $B$ of the same size such that $AB = BA = I$, we call $B$ an inverse of $A$.&lt;/p&gt;
+    <content type="html">&lt;h4 id=&quot;Linear-Algebra-Eigenvalues-and-Eigenvectors&quot;&gt;&lt;a href=&quot;#Linear-Algebra-Eigenvalues-and-Eigenvectors&quot; class=&quot;headerlink&quot; title=&quot;Linear Algebra : Eigenvalues and Eigenvectors&quot;&gt;&lt;/a&gt;Linear Algebra : Eigenvalues and Eigenvectors&lt;/h4&gt;&lt;h4 id=&quot;Trace-and-determinant&quot;&gt;&lt;a href=&quot;#Trace-and-determinant&quot; class=&quot;headerlink&quot; title=&quot;Trace and determinant&quot;&gt;&lt;/a&gt;Trace and determinant&lt;/h4&gt;&lt;p&gt;A square matrix $A$ is called invertible if there is a square matrix $B$ of the same size such that $AB = BA = I$, we call $B$ an inverse of $A$.&lt;/p&gt;
 &lt;p&gt;An inverse is unique.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;term &lt;em&gt;nonsingular&lt;/em&gt; which means the same as invertible, and &lt;em&gt;singular&lt;/em&gt;, which means the same as noninvertible. &lt;/p&gt;
@@ -49,7 +48,6 @@
 &lt;/ul&gt;
 &lt;p&gt;The sum of the entries along the main diagonal is called the &lt;em&gt;trace&lt;/em&gt; of A:&lt;/p&gt;
 &lt;p&gt;$$\lambda_1 + \lambda_2 + … + \lambda&lt;em&gt;n = trace = a&lt;/em&gt;{11} + a&lt;em&gt;{22} + … + a&lt;/em&gt;{nn}$$&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./Screenshot from 2016-10-24 10-41-49.png&quot; alt=&quot;Rotation_Matrix&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Matrices:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Symmetric matrix: $S^T = S$&lt;/li&gt;
