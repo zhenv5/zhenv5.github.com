@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Talk is cheap"><title>Eigenvalues and Eigenvectors | zhenv5</title><link rel="stylesheet" type="text/css" href="/css/normalize.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="/css/pure-min.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Eigenvalues and Eigenvectors</h1><a id="logo" href="/.">zhenv5</a><p class="description">Show me your code</p></div><div id="nav-menu"><a href="/." class="current"><i class="icon-home"> Home</i></a><a href="/archives/"><i class="icon-archive"> Archive</i></a><a href="/atom.xml"><i class="icon-rss"> RSS</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post post-page"><h1 class="post-title">Eigenvalues and Eigenvectors</h1><div class="post-meta">2016-12-05<span class="categories"> | Categorized in<a href="/categories/Linear-Algebra/"> Linear Algebra</a></span></div><span data-disqus-identifier="2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/" class="disqus-comment-count"></span><div class="post-content"><h4 id="Linear-Algebra-Eigenvalues-and-Eigenvectors"><a href="#Linear-Algebra-Eigenvalues-and-Eigenvectors" class="headerlink" title="Linear Algebra : Eigenvalues and Eigenvectors"></a>Linear Algebra : Eigenvalues and Eigenvectors</h4><p>@(Algebra)</p>
+<h4 id="Trace-and-determinant"><a href="#Trace-and-determinant" class="headerlink" title="Trace and determinant"></a>Trace and determinant</h4><p>A square matrix $A$ is called invertible if there is a square matrix $B$ of the same size such that $AB = BA = I$, we call $B$ an inverse of $A$.</p>
+<p>An inverse is unique.</p>
+<blockquote>
+<p>term <em>nonsingular</em> which means the same as invertible, and <em>singular</em>, which means the same as noninvertible. </p>
+</blockquote>
+<h4 id="Eigenvalues-and-eigenvectors"><a href="#Eigenvalues-and-eigenvectors" class="headerlink" title="Eigenvalues and eigenvectors"></a>Eigenvalues and eigenvectors</h4><ul>
+<li>an eigenvector $x$ lies along the same line as $Ax$: $Ax = \lambda x$, The eigenvalue is $\lambda$</li>
+<li>if $Ax = \lambda x$, then $A^2x = \lambda ^2 x$ and $A^{-1}x = \lambda ^ {-1} x$, and $(A+cI)x = (\lambda + c) x$</li>
+<li>if $Ax = \lambda x$, then $(A - \lambda I)x = 0$, and $A - \lambda I$ is singular and $det(A - \lambda I) = 0$</li>
+</ul>
+<p>To explain eigenvalues, we first explain eigenvectors. Almost all vectors change direction, when they are multiplied by $A$. <strong>Certain exceptional vector x are in the same direction as </strong> $Ax$, which are called eigenvectors. </p>
+<p>$$Ax = \lambda x$$</p>
+<p>$$A^nx = \lambda ^ n x$$</p>
+<p>$$(A - \lambda I) x = 0$$</p>
+<p>To solve the eigenvalue problem for an $n$ by $n$ matrix, follow these steps:</p>
+<ul>
+<li>Compute the determinant of $A - \lambda I$, which is a polynomial in $\lambda$ of degree $n$</li>
+<li>Find the root of of this polynomial, by solving $det(A - \lambda I) = 0$. The $n$ roots are the $n$ eigenvalues of $A$. They make $A - \lambda I$ singular</li>
+<li><p>For each eigenvalue $\lambda$, solve $(A - \lambda I)x = 0$ to find eigenvector $x$</p>
+<blockquote>
+<p>The product of the $n$ eigenvalues equals the determinant. The sum of the $n$ eigenvalues equals the sum of the $n$ diagonal entries. </p>
+</blockquote>
+</li>
+</ul>
+<p>The sum of the entries along the main diagonal is called the <em>trace</em> of A:</p>
+<p>$$\lambda_1 + \lambda_2 + … + \lambda<em>n = trace = a</em>{11} + a<em>{22} + … + a</em>{nn}$$</p>
+<p><img src="./Screenshot from 2016-10-24 10-41-49.png" alt="Rotation_Matrix"></p>
+<p>Matrices:</p>
+<ul>
+<li>Symmetric matrix: $S^T = S$</li>
+<li>Skew-symmetric: $S^T = -S$</li>
+<li>Orthogonal matrix: $Q^TQ = I$</li>
+</ul>
+<p>The eigenvectors for all these special matrices are perpendicular </p>
+<blockquote>
+<p>A and B share the same n independent eigenvectors if and only if $AB = BA$</p>
+</blockquote>
+<ul>
+<li>The eigenvalue of $A^2$ and $A^{-1}$ are $\lambda^2$ and $\lambda^{-1}$, with the same eigenvectors.</li>
+</ul>
+<h4 id="Power-method-for-approximating-eigenvalues"><a href="#Power-method-for-approximating-eigenvalues" class="headerlink" title="Power method for approximating eigenvalues"></a>Power method for approximating eigenvalues</h4><p>Definition of Dominant Eigenvalue and Dominant Eigenvector: Let $\lambda_1$, $\lambda_2$,…, and $\lambda_n$ be the eigenvalues of $n$ x $n$ matrix $A$. $\lambda_1$ is called the dominant eigenvalue of $A$ if $|\lambda_1| &gt; |\lambda_i|$, $i = 2,…,n$.</p>
+<p>The eigenvectors corresponding to $\lambda_1$ are called dominant eigenvectors of $A$.</p>
+<p>Not every matrix has a dominant eigenvalue. </p>
+<p><strong>Determining a Eigenvalue from an eigenvector</strong>: if $x$ is an eigenvector of a matrix $A$, then its corresponding eigenvalue is given by:</p>
+<p>$$\lambda = \frac{Ax \cdot x}{x \cdot x}$$</p>
+<p>Since $x$ is an eigenvector of $A$, $Ax = \lambda x$:</p>
+<p>$$\frac{Ax \cdot x}{x \cdot x} = \frac{\lambda x \cdot x}{x \cdot x} = \lambda$$</p>
+<h5 id="The-power-method"><a href="#The-power-method" class="headerlink" title="The power method"></a>The power method</h5><p>$$x_1 = A x_0$$</p>
+<p>$$x_2 = A x_1 = A^2 x_0$$</p>
+<p>$$x_3 = A x_2 = A^3 x_0$$</p>
+<p>$$x<em>k = A x</em>{k-1} = A^k x_0$$</p>
+<p>For large powers of $k$, and by properly scaling this sequence, you will see that you obtain a good approximation of the dominant eigenvector of $A$.</p>
+<p>The power method with scaling: One way to accomplish this scaling is to determine the component of $Ax_i$ that has the <strong>largest absolute value</strong> and multiply the vector $Ax_i$ by the reciprocal of this component. The resulting vector will then have components whose absolute values are less than or equal to $1$. Other scaling techniques are possible. </p>
+<h4 id="Convergence-of-the-Power-method"><a href="#Convergence-of-the-Power-method" class="headerlink" title="Convergence of the Power method"></a>Convergence of the Power method</h4><blockquote>
+<p>If $A$ is an $n$ x $n$ diagonalizable matrix with a dominant eigenvalue, then there exists a nonzero vector $x_0$ such that the sequence of vectors given by: $Ax_0$, $A^2x_0$, $A^3x_0$, $A^4x_0$,…, $A^kx_0$,… approaches a multiple of the dominant eigenvector of $A$. </p>
+</blockquote>
+<p>Because $A$ is diagonalizable, it has $n$ linearly independent eigenvectors $x_1$, $x_2$,…,$x_n$ with corresponding eigenvalue $\lambda_1$, $\lambda_2$,…,$\lambda_n$. Assume that these eigenvalues are ordered so that $\lambda_1$ is the dominant eigenvalue. Because the $n$ eigenvectors $x_1$, $x_2$, …, $x_n$ are linearly independent, they must form a basis for $R^n$. For the initial approximation $x_0$, choose a non-zero vector such that:</p>
+<p>$$x_0 = c_1 x_1 + c_2x_2 + … + c_nx_n$$</p>
+<p>has non-zero leading coefficients. If $c_1 = 0$, the power method may not converge, and a different $x_0$ must be used as the initial approximation. </p>
+<p>$$Ax_0 = A(c_1 x_1 + c_2x_2 + … + c_nx_n)$$ </p>
+<p>$$= c_1 A x_1 + c_2 A x_2 + … + c_n A x_n)$$</p>
+<p> $$= c_1 \lambda_1 x_1 + c_2 \lambda_2 x_2 + … + c_n \lambda_n x_n)$$</p>
+<p>Repeated multiplication of both sides of the equation by A produces:</p>
+<p>$$A^kx_0 = c_1 \lambda_1^k x_1 + c_2 \lambda_2^k x_2 + … + c_n \lambda_n^k x_n$$</p>
+<p>$$ = \lambda_1^k (c_1x_1 + c_2x_2{(\frac{\lambda_2}{\lambda_1})}^k + … + c_nx_n {(\frac{\lambda_2}{\lambda_1})}^k)$$</p>
+<p>As $k$ approaches infinity, this implies the approximation :</p>
+<p>$$A^kx_0 = \lambda_1^kc_1x_1$$</p>
+<p>and $c_1 != 0$.</p>
+<p>The power method will converge quickly if $\lambda_2 / \lambda_1$ is small, and slowly if the ratio is close to $1$. </p>
+<p>Another algorithm to compute eigenvalues and eigenvectors is named <strong>QR algorithm</strong>.</p>
+<p>A visualization demo of eigenvector and eigenvalue: <a href="http://setosa.io/ev/eigenvectors-and-eigenvalues/" target="_blank" rel="external">Eigenvectors and Eigenvalues</a></p>
+<h4 id="Compute-the-second-largest-eigenvalues"><a href="#Compute-the-second-largest-eigenvalues" class="headerlink" title="Compute the second largest eigenvalues"></a>Compute the second largest eigenvalues</h4><p>The largest eigenvalue $\lambda_1$ and eigenvector $v<em>1$ by iterating $x</em>{n+1} = \frac{Ax_n}{||Ax_n||}$ with a random initial $x_0$. Once we find a good approximation for $v_1$, we can consider $A = A - \frac{\lambda_1}{||x_1||^2}x_1x_1^T$. The new matrix is orthogonal to $v_1$. Use the power method on $A$ again, which will reveal $v_2$, an eigenvector of a largest eigenvalue of $A$, and continue. </p>
+<h4 id="Markov-Matrix"><a href="#Markov-Matrix" class="headerlink" title="Markov Matrix"></a>Markov Matrix</h4><p><strong>Markov matrix</strong>: whose entries are positive and whose columns added up to one. It always has $\lambda = 1$ as its largest eigenvalue. That means that there is a value of $v_t$ for which:</p>
+<p>$$Av_t = \lambda v_t = v_t$$</p>
+<p>It’s  a steady state. </p>
+<h4 id="Properties-of-Eigenvectors-and-Eigenvalues"><a href="#Properties-of-Eigenvectors-and-Eigenvalues" class="headerlink" title="Properties of Eigenvectors and Eigenvalues"></a>Properties of Eigenvectors and Eigenvalues</h4><ul>
+<li>Eigenvectors can only be found for square matrices, not every square matrix has eigenvectors </li>
+<li>All the eigenvectors of a matrix are perpendicular (orthogonal)</li>
+</ul>
+</div><a data-url="http://zhenv5.github.io/2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/" data-id="ciwciawnx000009v2zfb4vxas" class="article-share-link">Share</a><div class="tags"><a href="/tags/Algebra/">Algebra</a><a href="/tags/Eigenvalue/">Eigenvalue</a><a href="/tags/Eigenvector/">Eigenvector</a></div><div class="post-nav"><a href="/2016/09/30/Python/Way-to-Python/" class="next">Way to Python Tips<i class="icon-next"></i></a></div><div id="disqus_thread"><script>var disqus_shortname = 'zhenv5';
+var disqus_identifier = '2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/';
+var disqus_title = 'Eigenvalues and Eigenvectors';
+var disqus_url = 'http://zhenv5.github.io/2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//zhenv5.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search" class="search-form-input"/><input type="hidden" name="sitesearch" value="http://zhenv5.github.io"/></form></div><div class="widget"><div class="widget-title">Categories</div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Deep-Learning/">Deep Learning</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linear-Algebra/">Linear Algebra</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Matplotlib/">Matplotlib</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sublime/">Sublime</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Ubuntu/">Ubuntu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Visualization/">Visualization</a></li></ul></div><div class="widget"><div class="widget-title">Tags</div><div class="tagcloud"><a href="/tags/subprocess/" style="font-size: 15px;">subprocess</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Binary-Search-Tree/" style="font-size: 15px;">Binary Search Tree</a> <a href="/tags/Subprocess/" style="font-size: 15px;">Subprocess</a> <a href="/tags/Module/" style="font-size: 15px;">Module</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a> <a href="/tags/Progressbar/" style="font-size: 15px;">Progressbar</a> <a href="/tags/Heap/" style="font-size: 15px;">Heap</a> <a href="/tags/String/" style="font-size: 15px;">String</a> <a href="/tags/Punctuation/" style="font-size: 15px;">Punctuation</a> <a href="/tags/Ubuntu/" style="font-size: 15px;">Ubuntu</a> <a href="/tags/QT/" style="font-size: 15px;">QT</a> <a href="/tags/CMake/" style="font-size: 15px;">CMake</a> <a href="/tags/VTK/" style="font-size: 15px;">VTK</a> <a href="/tags/urllib2/" style="font-size: 15px;">urllib2</a> <a href="/tags/tweepy/" style="font-size: 15px;">tweepy</a> <a href="/tags/Github/" style="font-size: 15px;">Github</a> <a href="/tags/itertools/" style="font-size: 15px;">itertools</a> <a href="/tags/Mysql/" style="font-size: 15px;">Mysql</a> <a href="/tags/argparse/" style="font-size: 15px;">argparse</a> <a href="/tags/tensor/" style="font-size: 15px;">tensor</a> <a href="/tags/recommender-system/" style="font-size: 15px;">recommender system</a> <a href="/tags/Jupyter/" style="font-size: 15px;">Jupyter</a> <a href="/tags/deep-learning/" style="font-size: 15px;">deep learning</a> <a href="/tags/visualization/" style="font-size: 15px;">visualization</a> <a href="/tags/OSC/" style="font-size: 15px;">OSC</a> <a href="/tags/Crontab/" style="font-size: 15px;">Crontab</a> <a href="/tags/Matplotlib/" style="font-size: 15px;">Matplotlib</a> <a href="/tags/Sublime/" style="font-size: 15px;">Sublime</a> <a href="/tags/Eigenvalue/" style="font-size: 15px;">Eigenvalue</a> <a href="/tags/Eigenvector/" style="font-size: 15px;">Eigenvector</a> <a href="/tags/Algebra/" style="font-size: 15px;">Algebra</a></div></div><div class="widget"><div class="widget-title">Recent</div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/05/Linear_Algebra/Linear-Algebra-Eigenvalues-and-Eigenvectors/">Eigenvalues and Eigenvectors</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/30/Python/Way-to-Python/">Way to Python Tips</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/Others/sublime_configuration/">Sublime Configuration</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/01/Social-Network/函数式编程/">Social-Network/函数式编程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/21/Python/String-format-in-Python/">String Fromat in Python</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/20/Python/Matplotlib-savefig-to-pdf/">Matplotlib save fig to pdf</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/15/Others/Crontab-Run-Scripts-Automically/">Crontab</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Machine-Learning-and-Data-Mining/Deep-Learning-Resources/">Deep Learning Resources</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/Others/OSC-Tutorial/">OSC Tutorial</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/10/Machine-Learning-and-Data-Mining/Data-Visualization-Tools/">Data Visualization Tools</a></li></ul></div><div class="widget"><div class="widget-title">Blogroll</div><ul></ul><a href="https://twitter.com/zhenv5" title="Twitter" target="_blank">Twitter</a><ul></ul><a href="https://github.com/zhenv5/" title="Github" target="_blank">Github</a><ul></ul><a href="http://www.ohiocssa.com/" title="Ohio CSSA (俄亥俄华人论坛)" target="_blank">Ohio CSSA (俄亥俄华人论坛)</a><ul></ul><a href="http://www.osucssa.com/" title="Ohio CSSA (俄亥俄华人圈)" target="_blank">Ohio CSSA (俄亥俄华人圈)</a></div></div></div></div><div id="footer">© <a href="/." rel="nofollow">zhenv5.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/jquery.min.js?v=0.0.0"></script><script type="text/javascript" src="/js/totop.js?v=0.0.0"></script><script type="text/javascript" src="/js/fancybox.pack.js?v=0.0.0"></script><script type="text/javascript" src="/js/jquery.fancybox.js?v=0.0.0"></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-56931714-1','auto');ga('send','pageview');
+</script><script type="text/javascript" src="/js/share.js?v=0.0.0"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
